@@ -4,7 +4,7 @@ Title: About
 
 I'm André Fellipe and I live in Natal - Brazil.
 
-I'm an electrical engineer student that loves The X-Files.
+I'm an electrical engineer that loves The X-Files.
 
 ## About this website
 
