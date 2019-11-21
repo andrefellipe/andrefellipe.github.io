@@ -1,0 +1,271 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="https://andrefellipe.com/theme/stylesheet/style.min.css">
+
+  <link rel="stylesheet" type="text/css" href="https://andrefellipe.com/theme/pygments/native.min.css">
+  <link rel="stylesheet" type="text/css" href="https://andrefellipe.com/theme/font-awesome/css/font-awesome.min.css">
+
+
+    <link href="https://andrefellipe.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="André Fellipe Atom">
+
+
+
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#333333">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#333333">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Microsoft EDGE -->
+    <meta name="msapplication-TileColor" content="#333333">
+
+<meta name="author" content="andre fellipe" />
+<meta name="description" content="A tutorial to use OpenCV with Java. This post was written to the sound of Hall &amp; Oates&#39; Big Bam Boom. You can listen one of the songs here." />
+<meta name="keywords" content="java, opencv, dip">
+
+<meta property="og:site_name" content="André Fellipe"/>
+<meta property="og:title" content="Hello, OpenCV and Java"/>
+<meta property="og:description" content="A tutorial to use OpenCV with Java. This post was written to the sound of Hall &amp; Oates&#39; Big Bam Boom. You can listen one of the songs here."/>
+<meta property="og:locale" content="en_US.utf8"/>
+<meta property="og:url" content="https://andrefellipe.com/opencv-java.html"/>
+<meta property="og:type" content="article"/>
+<meta property="article:published_time" content="2018-08-29 16:50:00-03:00"/>
+<meta property="article:modified_time" content="2018-10-03 23:40:00-03:00"/>
+<meta property="article:author" content="https://andrefellipe.com/author/andre-fellipe.html">
+<meta property="article:section" content="digital image processing"/>
+<meta property="article:tag" content="java"/>
+<meta property="article:tag" content="opencv"/>
+<meta property="article:tag" content="dip"/>
+<meta property="og:image" content="https://andrefellipe.com/images/pic.jpg">
+
+  <title>André Fellipe &ndash; Hello, OpenCV and Java</title>
+
+</head>
+<body>
+  <aside>
+    <div>
+      <a href="https://andrefellipe.com">
+        <img src="https://andrefellipe.com/images/pic.jpg" alt="André Fellipe" title="André Fellipe">
+      </a>
+      <h1><a href="https://andrefellipe.com">André Fellipe</a></h1>
+
+<p>made on the internet</p>
+      <nav>
+        <ul class="list">
+          <li><a href="https://andrefellipe.com/pages/about.html">About</a></li>
+          <li><a href="https://andrefellipe.com/pages/contact.html">Contact</a></li>
+
+        </ul>
+      </nav>
+
+      <ul class="social">
+        <li><a class="sc-linkedin" href="https://www.linkedin.com/in/andrefellipe/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+        <li><a class="sc-github" href="https://github.com/andrefellipe/" target="_blank"><i class="fa fa-github"></i></a></li>
+        <li><a class="sc-envelope-o" href="mailto:andrefellipern@gmail.com" target="_blank"><i class="fa fa-envelope-o"></i></a></li>
+      </ul>
+    </div>
+
+
+  </aside>
+  <main>
+
+    <nav>
+      <a href="https://andrefellipe.com">    Home
+</a>
+
+      <a href="/archives.html">Archives</a>
+      <a href="/categories.html">Categories</a>
+
+      <a href="https://andrefellipe.com/feeds/all.atom.xml">    Atom
+</a>
+
+    </nav>
+
+<article class="single">
+  <header>
+      
+    <h1 id="opencv-java">Hello, OpenCV and Java</h1>
+    <p>
+          Posted on Aug 29, 2018 in <a href="https://andrefellipe.com/category/digital-image-processing.html">digital image processing</a>
+
+
+    </p>
+  </header>
+
+
+  <div>
+    <p>This tutorial will not teach you how to compile your own OpenCV using the source code. I recommend that you try this at a future date for learning purposes. At this moment, let's try a different approach. I am using Ubuntu 18.04 and this tutorial will only work for distributions of the Linux operating system. You will see why below.</p>
+<p>Also, I expect that you have a general knowledge about Java. If you know nothing about it so far, just follow the instructions.</p>
+<p>Let's dive in!</p>
+<div class="section" id="checking-if-you-have-java">
+<h2>Checking if you have Java</h2>
+<p>Open the terminal (ctrl + alt + T).</p>
+<p>Run the following command to check if you already have Java:</p>
+<div class="highlight"><pre><span></span><span class="gp">$</span> java -version
+</pre></div>
+<p>You are good to go if you see something like this:</p>
+<div class="highlight"><pre><span></span><span class="go">java version &quot;1.8.0_181&quot;</span>
+<span class="go">Java(TM) SE Runtime Environment (build 1.8.0_181-b13)</span>
+<span class="go">Java HotSpot(TM) 64-Bit Server VM (build 25.181-b13, mixed mode)</span>
+</pre></div>
+<p>You may have another version of Oracle's Java or OpenJDK, but this should not be a problem.</p>
+<p>If you do not see the message above or something similar, you will need to install Java. If you can see the message, jump to the next section.</p>
+<p>Run the following commands to install Oracle's Java 8:</p>
+<div class="highlight"><pre><span></span><span class="gp">$</span> sudo add-apt-repository ppa:webupd8team/java
+<span class="gp">$</span> sudo apt-get update
+<span class="gp">$</span> sudo apt-get install oracle-java8-installer
+</pre></div>
+<p>Run the <strong>java -version</strong> command again to make sure everything is fine.</p>
+</div>
+<div class="section" id="download-opencv">
+<h2>Download OpenCV</h2>
+<p>Run the following command to install the OpenCV library:</p>
+<div class="highlight"><pre><span></span><span class="gp">$</span> sudo apt-get install libopencv-dev
+</pre></div>
+<p>That's it.</p>
+</div>
+<div class="section" id="creating-our-first-program">
+<h2>Creating Our First Program</h2>
+<p>Using your favorite text editor, create a file named <strong>HelloOpenCVJava.java</strong>. I am using <a class="reference external" href="https://en.wikipedia.org/wiki/Vim_(text_editor)">Vim</a>, so the command would be:</p>
+<div class="highlight"><pre><span></span><span class="gp">$</span> vim HelloOpenCVJava.java
+</pre></div>
+<p>Now, copy and paste the following code:</p>
+<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">org.opencv.core.Core</span><span class="o">;</span>
+
+<span class="kd">public</span> <span class="kd">class</span> <span class="nc">HelloOpenCVJava</span> <span class="o">{</span>
+
+  <span class="cm">/** Loading the OpenCV library. */</span>
+  <span class="kd">static</span> <span class="o">{</span>
+    <span class="n">System</span><span class="o">.</span><span class="na">loadLibrary</span><span class="o">(</span><span class="n">Core</span><span class="o">.</span><span class="na">NATIVE_LIBRARY_NAME</span><span class="o">);</span>
+  <span class="o">}</span>
+
+  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="o">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="o">)</span> <span class="o">{</span>
+
+    <span class="cm">/** Printing the OpenCV version. */</span>
+    <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&quot;Hello OpenCV &quot;</span> <span class="o">+</span> <span class="n">Core</span><span class="o">.</span><span class="na">VERSION</span> <span class="o">+</span> <span class="s">&quot;!&quot;</span><span class="o">);</span>
+
+    <span class="cm">/** Printing the Java version. */</span>
+    <span class="n">System</span><span class="o">.</span><span class="na">out</span><span class="o">.</span><span class="na">println</span><span class="o">(</span><span class="s">&quot;Hello to you too, Java &quot;</span> <span class="o">+</span> <span class="n">System</span><span class="o">.</span><span class="na">getProperty</span><span class="o">(</span><span class="s">&quot;java.version&quot;</span><span class="o">)</span> <span class="o">+</span> <span class="s">&quot;!&quot;</span><span class="o">);</span>
+  <span class="o">}</span>
+
+<span class="o">}</span>
+</pre></div>
+<p>Let's breakdown the <strong>HelloOpenCVJava</strong> application.</p>
+<p>The <strong>import</strong> keyword is necessary to load the <strong>Core</strong> class from the OpenCV library.</p>
+<p>We use the <strong>NATIVE_LIBRARY_NAME</strong> property of the Core class to find the corresponding name of the library and use as parameter to the <strong>loadLibrary</strong> method. In this case, it returns <strong>opencv_java320</strong>. This will allow us to use the OpenCV library. After that, we print the versions of the library and Java.</p>
+</div>
+<div class="section" id="compiling-and-running-helloopencvjava">
+<h2>Compiling and Running HelloOpenCVJava</h2>
+<p>Your project directory must be looking like this right now:</p>
+<div class="highlight"><pre><span></span><span class="go">.</span>
+<span class="go">|__ HelloOpenCVJava.java</span>
+</pre></div>
+<p>If it is, run the following command to compile HelloOpenCVJava.java:</p>
+<div class="highlight"><pre><span></span><span class="gp">$</span> javac -cp /usr/share/OpenCV/java/opencv-320.jar HelloOpenCVJava.java
+</pre></div>
+<p>Now you should have your bytecode class file <strong>HelloOpenCVJava.class</strong>. Here's how the directory should look like:</p>
+<div class="highlight"><pre><span></span><span class="go">.</span>
+<span class="go">|__ HelloOpenCVJava.class</span>
+<span class="go">|__ HelloOpenCVJava.java</span>
+</pre></div>
+<p>The <a class="reference external" href="https://docs.oracle.com/javase/8/docs/technotes/tools/windows/findingclasses.html#BABBFCIJ">-cp flag</a> tells the compiler to set the system property java.class.path, which is a list of directories, JAR files and ZIP files that contain class files. We are using here to indicate that we want to find our <strong>opencv-320.jar</strong>.</p>
+<p>We have everything we need to run our application now. We do this with the following command:</p>
+<div class="highlight"><pre><span></span><span class="gp">$</span> java -Djava.library.path<span class="o">=</span>/usr/lib/jni -cp /usr/share/OpenCV/java/opencv-320.jar:. HelloOpenCVJava
+</pre></div>
+<p><strong>-Djava.library.path</strong> sets the <strong>java.library.path</strong> property (-D is a flag to set a system property) to inform the JVM where it can locate native libraries. This property is part of the system environment used by Java, in order to find and load native libraries used by an application.</p>
+<p>This should be your output:</p>
+<div class="highlight"><pre><span></span><span class="go">Hello OpenCV 3.2.0!</span>
+<span class="go">Hello to you too, Java 1.8.0_181!</span>
+</pre></div>
+<p>The second line may change depending on your version of Java.</p>
+<p>We did it! Well, I did it. I hope that you can replicate this in your machine.</p>
+<p>To finish, I would like to point out that in the <a class="reference external" href="https://opencv-java-tutorials.readthedocs.io/en/latest/01-installing-opencv-for-java.html#set-up-opencv-for-java-in-eclipse">OpenCV Java Tutorials Documentation</a> there's a pretty neat tutorial on how to use OpenCV in an IDE like <a class="reference external" href="https://www.eclipse.org/">Eclipse</a>, if you prefer to work in such fashion.</p>
+<p>In the next chapter of this journey, we will play a little with Mat objects and some images. Stay tuned!</p>
+</div>
+
+  </div>
+  <div class="tag-cloud">
+    <p>
+      <a href="https://andrefellipe.com/tag/java.html">java</a>
+      <a href="https://andrefellipe.com/tag/opencv.html">opencv</a>
+      <a href="https://andrefellipe.com/tag/dip.html">dip</a>
+    </p>
+  </div>
+
+  <div class="center social-share">
+    <p>    Like this article? Share it with your friends!
+</p>
+    <div class="addthis_native_toolbox"></div>
+    <div class="addthis_sharing_toolbox"></div>
+    <div class="addthis_inline_share_toolbox"></div>
+  </div>
+
+
+    <div class="addthis_relatedposts_inline"></div>
+
+
+<!-- Disqus -->
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'andrefellipe';
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>
+        Please enable JavaScript to view comments.
+
+</noscript>
+<!-- End Disqus -->
+</article>
+
+    <footer>
+<p>
+  &copy;  2018 - This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>
+</p>
+<p>    Powered by <a href="http://getpelican.com" target="_blank">Pelican</a> - <a href="https://github.com/alexandrevicenzi/flex" target="_blank">Flex</a> theme by <a href="http://alexandrevicenzi.com" target="_blank">Alexandre Vicenzi</a>
+</p><p>
+  <a rel="license"
+     href="http://creativecommons.org/licenses/by-sa/4.0/"
+     target="_blank">
+    <img alt="Creative Commons License"
+         title="Creative Commons License"
+         style="border-width:0"
+           src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png"
+         width="80"
+         height="15"/>
+  </a>
+</p>    </footer>
+  </main>
+
+
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5ba05ddbeb328e87" async="async"></script>
+
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " André Fellipe ",
+  "url" : "https://andrefellipe.com",
+  "image": "https://andrefellipe.com/images/pic.jpg",
+  "description": "André's personal site"
+}
+</script>
+
+</body>
+</html>
