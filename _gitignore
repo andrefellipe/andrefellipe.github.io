@@ -1,0 +1,6 @@
+*.pyc
+cache/*
+output/*
+*.pid
+.gsts/
+.vscode/
