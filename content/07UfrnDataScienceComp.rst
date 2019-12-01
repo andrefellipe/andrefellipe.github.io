@@ -3,7 +3,7 @@ Is it just me, or is it hot in here?
 
 :date: 2019-11-20 23:00
 :modified: 2019-11-20 23:00
-:tags: statistics, data science, python
+:tags: statistics, data science, python, ufrn
 :category: portfolio
 :slug: ufrn-data-science-comp-2019
 :authors: André Fellipe
