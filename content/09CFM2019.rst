@@ -1,0 +1,30 @@
+Quant boys, quant boys, whatcha gonna do
+########################################
+
+:date: 2020-01-26 23:20
+:modified: 2020-01-26 23:20
+:tags: statistics, data science, python
+:category: portfolio
+:slug: cfm-2019
+:authors: André Fellipe
+:summary: At the end of 2019, I participated in another data science competition, this time related to finance. This post was written to the sound of The Police's `Outlandos d'Amour'`_. You can listen one of the songs here_.
+
+I participated in my second data science competition last month and it was again a worthy experience.
+
+My team, composed of myself and two friends, competed with 131 teams from all over the world at `Capital Fund Management`_’s 2019 supervised machine learning challenge, hosted at ENS_’s `Challenge Data`_ platform.
+
+The goal was to predict sign accuracy using anonymized US stock returns data, a highly stochastic dataset with 1 million lines and 74 columns (training + test).
+
+The group split between different tasks such as feature engineering, essaying neural network architectures (my part) and AutoML frameworks, and applying traditional ML methods like GBMs.
+
+Our best submission was a CNN-based one that unfortunately overfit the training data a little, which gave us the final ranking of 15.
+
+We did this in less than a month. I believe that we will participate again this year and we're going to go even further since we have more time.
+
+The first place wins an iPad. I never had one and, oh boy, I want it.
+
+.. _`Outlandos d'Amour'`: https://en.wikipedia.org/wiki/Outlandos_d%27Amour
+.. _here: https://www.youtube.com/watch?v=nH0vjLwMyc4
+.. _`Capital Fund Management`: https://www.cfm.fr/
+.. _ENS: https://en.wikipedia.org/wiki/%C3%89cole_normale_sup%C3%A9rieure_(Paris)
+.. _`Challenge Data`:  https://challengedata.ens.fr/
