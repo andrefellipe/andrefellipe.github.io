@@ -1,0 +1,369 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+
+    <link rel="stylesheet" type="text/css" href="https://andrefellipe.com/theme/stylesheet/style.min.css">
+
+  <link rel="stylesheet" type="text/css" href="https://andrefellipe.com/theme/pygments/native.min.css">
+  <link rel="stylesheet" type="text/css" href="https://andrefellipe.com/theme/font-awesome/css/font-awesome.min.css">
+
+
+    <link href="https://andrefellipe.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Andre Fellipe Atom">
+
+
+
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#333333">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#333333">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Microsoft EDGE -->
+    <meta name="msapplication-TileColor" content="#333333">
+
+<meta name="author" content="Andre Fellipe da Silva" />
+<meta name="description" content="An application that loads an image using the OpenCV library. This post was written to the sound of San Cisco&#39;s eponymous album. You can listen one of the songs here." />
+<meta name="keywords" content="java, swing, opencv, dip">
+
+<meta property="og:site_name" content="Andre Fellipe"/>
+<meta property="og:title" content="Hello, Tina Fey&#39;s Bossypants"/>
+<meta property="og:description" content="An application that loads an image using the OpenCV library. This post was written to the sound of San Cisco&#39;s eponymous album. You can listen one of the songs here."/>
+<meta property="og:locale" content="en_US.utf8"/>
+<meta property="og:url" content="https://andrefellipe.com/tina-fey-opencv.html"/>
+<meta property="og:type" content="article"/>
+<meta property="article:published_time" content="2018-10-17 22:00:00-03:00"/>
+<meta property="article:modified_time" content="2018-10-17 22:00:00-03:00"/>
+<meta property="article:author" content="https://andrefellipe.com/author/andre-fellipe-da-silva.html">
+<meta property="article:section" content="digital image processing"/>
+<meta property="article:tag" content="java"/>
+<meta property="article:tag" content="swing"/>
+<meta property="article:tag" content="opencv"/>
+<meta property="article:tag" content="dip"/>
+<meta property="og:image" content="./images/badge.jpeg">
+
+  <title>Andre Fellipe &ndash; Hello, Tina Fey&#39;s Bossypants</title>
+
+</head>
+<body>
+  <aside>
+    <div>
+      <a href="https://andrefellipe.com">
+        <img src="./images/badge.jpeg" alt="Andre Fellipe" title="Andre Fellipe">
+      </a>
+      <h1><a href="https://andrefellipe.com">Andre Fellipe</a></h1>
+
+<p>made on the internet</p>
+      <nav>
+        <ul class="list">
+          <li><a href="https://andrefellipe.com/pages/about.html">About</a></li>
+          <li><a href="https://andrefellipe.com/pages/contact.html">Contact</a></li>
+
+        </ul>
+      </nav>
+
+      <ul class="social">
+        <li><a class="sc-linkedin" href="https://www.linkedin.com/in/andrefellipe/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+        <li><a class="sc-github" href="https://github.com/andrefellipe/" target="_blank"><i class="fa fa-github"></i></a></li>
+        <li><a class="sc-envelope-o" href="mailto:andrefellipern@gmail.com" target="_blank"><i class="fa fa-envelope-o"></i></a></li>
+      </ul>
+    </div>
+
+
+  </aside>
+  <main>
+
+    <nav>
+      <a href="https://andrefellipe.com">    Home
+</a>
+
+      <a href="/archives.html">Archives</a>
+      <a href="/categories.html">Categories</a>
+
+      <a href="https://andrefellipe.com/feeds/all.atom.xml">    Atom
+</a>
+
+    </nav>
+
+<article class="single">
+  <header>
+      
+    <h1 id="tina-fey-opencv">Hello, Tina Fey's Bossypants</h1>
+    <p>
+          Posted on Oct 17, 2018 in <a href="https://andrefellipe.com/category/digital-image-processing.html">digital image processing</a>
+
+
+    </p>
+  </header>
+
+
+  <div>
+    <p>Here's a not so hot take: Tina Fey is awesome. Her accomplishments as a performer, writer and producer on Saturday Night Live, 30 Rock, Mean Girls, Unbreakable Kimmy Schmidt and other projects make her one of the greatest comedy minds of the 21st century.</p>
+<p>And what's the relation between Tina Fey, the OpenCV library and Java?</p>
+<p>None. I just find her incredible and I'm loving her autobiography, 2011's Bossypants.</p>
+<p>Anyway, today we'll build an application where the user can choose a file from its file system and, if it's a valid image, it gets displayed on the screen. Let's call it <strong>Image Viewer</strong>.</p>
+<p>You can see the final result below:</p>
+<img alt="Screenshot of the Image Viewer application showing a picture of Bossypants, Tina Fey's autobiography." class="align-center" src="images/03-01-ImageViewer.png" />
+<div class="section" id="creating-the-user-interface">
+<h2>Creating the user interface</h2>
+<p>Inside the OpenCV library, we have a cross-platform GUI called <a class="reference external" href="https://docs.opencv.org/3.4.3/d7/dfc/group__highgui.html">HighGUI</a> and a method called <a class="reference external" href="https://docs.opencv.org/3.4.3/d7/dfc/group__highgui.html#ga453d42fe4cb60e5723281a89973ee563">imshow()</a>. With this method, we can create a window and display an image within it. This is an easy and quick way to create prototypes.</p>
+<p>Unfortunately, there wasn't an <strong>imshow()</strong> method available for Java for a good amount of time, so we see a lot of work and tutorials using the Swing package, a popular GUI API that we've used on other posts before.</p>
+<p>Thanks to this situation, we will use Swing to build the interfaces that we need. If your knowledge of Swing is limited, I recommend that you take a look at some <a class="reference external" href="https://andrefellipe.com/category/swing.html">previous posts made here</a>.</p>
+<p>Oh yeah, there's another thing, I'm using <strong>OpenCV 3.2.0</strong> and I don't think there's a Java wrapper to the <strong>OpenCV HighGUI</strong> module. Newer versions of the library have it, though.</p>
+<p>The first thing we need to do, assuming that you've already know a little about Swing and can create a basic frame, is load the OpenCV library. We do this with the <a class="reference external" href="https://docs.oracle.com/javase/10/docs/api/java/lang/System.html#loadLibrary(java.lang.String)">loadLibrary()</a> method from the <a class="reference external" href="https://docs.oracle.com/javase/10/docs/api/java/lang/System.html">System</a> class. Also, in the image above, we can see that our application needs a <a class="reference external" href="https://docs.oracle.com/javase/10/docs/api/javax/swing/JFileChooser.html">JFileChooser</a> and a <a class="reference external" href="https://docs.oracle.com/javase/10/docs/api/javax/swing/JLabel.html">JLabel</a>. This means that, before the main method and the frame constructor, we need bring all of these components to life. We do this with the following code:</p>
+<div class="highlight"><pre><span></span>  <span class="cm">/** Loading the OpenCV library. */</span>
+  <span class="kd">static</span> <span class="p">{</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">loadLibrary</span><span class="p">(</span><span class="n">Core</span><span class="p">.</span><span class="na">NATIVE_LIBRARY_NAME</span><span class="p">);</span>
+  <span class="p">}</span>
+
+  <span class="cm">/** Creating the JFileChooser object that it&#39;s used to</span>
+<span class="cm">   *  give the user a good experience while he searches for</span>
+<span class="cm">   *  the image to be loaded. */</span>
+  <span class="kd">private</span> <span class="n">JFileChooser</span> <span class="n">imageChooser</span> <span class="o">=</span> <span class="k">new</span> <span class="n">JFileChooser</span><span class="p">();</span>
+
+  <span class="cm">/** Creating JLabel object that will display the image</span>
+<span class="cm">   *  to the user. */</span>
+  <span class="kd">private</span> <span class="n">JLabel</span> <span class="n">imageLabel</span> <span class="o">=</span> <span class="k">new</span> <span class="n">JLabel</span><span class="p">();</span>
+</pre></div>
+<p>With this ready, we style the components to provide a better user experience, add them to the content pane and add the necessary listeners. For instance, we use the <a class="reference external" href="https://docs.oracle.com/javase/10/docs/api/javax/swing/JFileChooser.html#addChoosableFileFilter(javax.swing.filechooser.FileFilter)">addChoosableFileFilter()</a> method from the <strong>JFileChooser</strong> to allow the user to filter the search results in the directories. In our case, we only want to display images, so we will filter the <strong>.gif</strong>, <strong>.jpg</strong> and <strong>.png</strong> files. To do this, we need an object from the <a class="reference external" href="https://docs.oracle.com/javase/10/docs/api/javax/swing/filechooser/FileNameExtensionFilter.html">FileNameExtensionFilter</a> class.</p>
+<p>The following code implements these tasks in our components:</p>
+<div class="highlight"><pre><span></span>    <span class="cm">/** Personalizing the JFileChooser object, adding it to the content pane and adding an ActionListener for when the user</span>
+<span class="cm">     *  clicks in the &quot;Open&quot; or &quot;Cancel&quot; option that shows up in the component. */</span>
+    <span class="n">imageChooser</span><span class="p">.</span><span class="na">addChoosableFileFilter</span><span class="p">(</span>
+        <span class="k">new</span> <span class="n">FileNameExtensionFilter</span><span class="p">(</span><span class="s">&quot;Graphics Files (.gif, .jpg, .png)&quot;</span><span class="p">,</span> <span class="s">&quot;gif&quot;</span><span class="p">,</span> <span class="s">&quot;jpg&quot;</span><span class="p">,</span> <span class="s">&quot;png&quot;</span><span class="p">));</span>
+    <span class="n">gridConstraints</span> <span class="o">=</span> <span class="k">new</span> <span class="n">GridBagConstraints</span><span class="p">();</span>
+    <span class="n">gridConstraints</span><span class="p">.</span><span class="na">gridx</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="n">gridConstraints</span><span class="p">.</span><span class="na">gridy</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="n">gridConstraints</span><span class="p">.</span><span class="na">fill</span> <span class="o">=</span> <span class="n">GridBagConstraints</span><span class="p">.</span><span class="na">BOTH</span><span class="p">;</span>
+    <span class="n">getContentPane</span><span class="p">().</span><span class="na">add</span><span class="p">(</span><span class="n">imageChooser</span><span class="p">,</span> <span class="n">gridConstraints</span><span class="p">);</span>
+    <span class="n">imageChooser</span><span class="p">.</span><span class="na">addActionListener</span><span class="p">(</span><span class="k">new</span> <span class="n">ActionListener</span><span class="p">(){</span>
+
+      <span class="nd">@Override</span>
+      <span class="kd">public</span> <span class="kt">void</span> <span class="nf">actionPerformed</span><span class="p">(</span><span class="n">ActionEvent</span> <span class="n">e</span><span class="p">)</span> <span class="p">{</span>
+        <span class="n">imageChooserActionPerformed</span><span class="p">(</span><span class="n">e</span><span class="p">);</span>
+      <span class="p">}</span>
+    <span class="p">});</span>
+
+    <span class="cm">/** Personalizing the JLabel object and adding it to the content pane. */</span>
+    <span class="n">imageLabel</span><span class="p">.</span><span class="na">setBorder</span><span class="p">(</span><span class="n">BorderFactory</span><span class="p">.</span><span class="na">createLineBorder</span><span class="p">(</span><span class="n">Color</span><span class="p">.</span><span class="na">BLACK</span><span class="p">));</span>
+    <span class="n">imageLabel</span><span class="p">.</span><span class="na">setOpaque</span><span class="p">(</span><span class="kc">true</span><span class="p">);</span>
+    <span class="n">imageLabel</span><span class="p">.</span><span class="na">setBackground</span><span class="p">(</span><span class="n">Color</span><span class="p">.</span><span class="na">WHITE</span><span class="p">);</span>
+    <span class="n">imageLabel</span><span class="p">.</span><span class="na">setHorizontalAlignment</span><span class="p">(</span><span class="n">SwingConstants</span><span class="p">.</span><span class="na">CENTER</span><span class="p">);</span>
+    <span class="n">imageLabel</span><span class="p">.</span><span class="na">setVerticalAlignment</span><span class="p">(</span><span class="n">SwingConstants</span><span class="p">.</span><span class="na">CENTER</span><span class="p">);</span>
+    <span class="n">gridConstraints</span> <span class="o">=</span> <span class="k">new</span> <span class="n">GridBagConstraints</span><span class="p">();</span>
+    <span class="n">gridConstraints</span><span class="p">.</span><span class="na">gridx</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+    <span class="n">gridConstraints</span><span class="p">.</span><span class="na">gridy</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+    <span class="n">gridConstraints</span><span class="p">.</span><span class="na">insets</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Insets</span><span class="p">(</span><span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">,</span> <span class="mi">10</span><span class="p">);</span>
+    <span class="n">getContentPane</span><span class="p">().</span><span class="na">add</span><span class="p">(</span><span class="n">imageLabel</span><span class="p">,</span> <span class="n">gridConstraints</span><span class="p">);</span>
+</pre></div>
+<p>Now our interface is ready. When we see the <strong>imageChooser</strong> component on our screen, we see that there are two buttons. One with the name &quot;Open&quot; and another one with the name &quot;Cancel&quot;. The <a class="reference external" href="https://docs.oracle.com/javase/10/docs/api/java/awt/event/ActionListener.html#actionPerformed(java.awt.event.ActionEvent)">actionPerformed()</a> method is called when the user clicks on one of these buttons. Now, we need to define the behaviour of the application when one of these events is triggered. Our helper method <strong>imageChooserActionPerformed()</strong> will handle this.</p>
+</div>
+<div class="section" id="showing-the-image-on-the-screen">
+<h2>Showing the image on the screen</h2>
+<p>With the <a class="reference external" href="https://docs.oracle.com/javase/10/docs/api/java/awt/event/ActionEvent.html#getActionCommand()">getActionCommand()</a> method from the <a class="reference external" href="https://docs.oracle.com/javase/10/docs/api/java/awt/event/ActionEvent.html">ActionEvent</a> class we can determine which button was clicked. We know that the property <a class="reference external" href="https://docs.oracle.com/javase/10/docs/api/javax/swing/JFileChooser.html#APPROVE_SELECTION">APPROVE_SELECTION</a> from the <strong>JFileChooser</strong> class is related to the &quot;Open&quot; button, so we assume that any other action will be related to the &quot;Cancel&quot; button since we're only interested in opening the image when the user clicks in the &quot;Open&quot; button.</p>
+<p>When the user clicks the &quot;Open&quot; button it means that he wants to see the image that the file represents in the screen. We need to find a way to pass this information to the OpenCV library so that it may help us open the file. Let's create a <strong>String</strong> named <strong>filePath</strong> that will store the path to the selected file. This string will store the result of the call of two methods: <a class="reference external" href="https://docs.oracle.com/javase/10/docs/api/javax/swing/JFileChooser.html#getSelectedFile()">getSelectedFile()</a> from the <strong>JFileChooser</strong> class and <a class="reference external" href="https://docs.oracle.com/javase/10/docs/api/java/io/File.html#toString()">toString()</a> from the <a class="reference external" href="https://docs.oracle.com/javase/10/docs/api/java/io/File.html">File</a> class. Basically, we get the file that the user selected and get its path in the form of a <strong>String</strong> object. To display the image using its path, we will create also a private method called <strong>showImage()</strong>.</p>
+<p>On the other hand, when the user clicks &quot;Cancel&quot;, he doesn't want to use the application anymore, so it must close. We do this by calling <strong>exit(0)</strong> from the <strong>System</strong> class.</p>
+<p>This is the code that makes up an important part of the application:</p>
+<div class="highlight"><pre><span></span>  <span class="cm">/** Helper method to decide what the application should do after the user interaction.</span>
+<span class="cm">   *  If the user selects a file and clicks the &quot;Open&quot; button, it calls other methods</span>
+<span class="cm">   *  that have the responsability to process the file and, if it&#39;s a valid image, show</span>
+<span class="cm">   *  in the JLabel object.</span>
+<span class="cm">   *  If the user clicks the &quot;Cancel&quot; button, it closes the application. */</span>
+  <span class="kd">private</span> <span class="kt">void</span> <span class="nf">imageChooserActionPerformed</span><span class="p">(</span><span class="n">ActionEvent</span> <span class="n">e</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">e</span><span class="p">.</span><span class="na">getActionCommand</span><span class="p">().</span><span class="na">equals</span><span class="p">(</span><span class="n">JFileChooser</span><span class="p">.</span><span class="na">APPROVE_SELECTION</span><span class="p">))</span> <span class="p">{</span>
+      <span class="n">String</span> <span class="n">filePath</span> <span class="o">=</span> <span class="n">imageChooser</span><span class="p">.</span><span class="na">getSelectedFile</span><span class="p">().</span><span class="na">toString</span><span class="p">();</span>
+      <span class="n">showImage</span><span class="p">(</span><span class="n">filePath</span><span class="p">);</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+      <span class="n">System</span><span class="p">.</span><span class="na">exit</span><span class="p">(</span><span class="mi">0</span><span class="p">);</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+</pre></div>
+<p>The <strong>showImage()</strong> method is the juicy part of the application. It's here that we start to deal with the OpenCV library. Our plan is simple: we take the string with the path, read it, transform it into an image that can be displayed on the screen and readjust the screen to the size of the image.</p>
+<p>To do this, we need an object from the  <a class="reference external" href="https://docs.opencv.org/3.4.3/d3/d63/classcv_1_1Mat.html#details">Mat</a> class. This class can be used to store grayscale or color images. We use the <a class="reference external" href="https://docs.opencv.org/3.4.3/d4/da8/group__imgcodecs.html#ga288b8b3da0892bd651fce07b3bbd3a56">imread()</a> method from the <a class="reference external" href="https://docs.opencv.org/3.4.3/d4/da8/group__imgcodecs.html">Imgcodecs</a> class to load an image from a file. We pass what this method returns to our <strong>image</strong> object from the <strong>Mat</strong> class. In case everything works accordingly to plan, we need to transform the <strong>image</strong> object to an object of the <a class="reference external" href="https://docs.oracle.com/javase/10/docs/api/java/awt/Image.html">Image</a> class, since our <strong>imageLabel</strong> from the Swing package doesn't understand what a <strong>Mat</strong> object is. In this case, to be more specific, we transform it to an object of the <a class="reference external" href="https://docs.oracle.com/javase/10/docs/api/java/awt/image/BufferedImage.html">BufferedImage</a> class.</p>
+<p>With our image prepared, we just set it as the <a class="reference external" href="https://docs.oracle.com/javase/10/docs/api/javax/swing/Icon.html">Icon</a> of our <strong>imageLabel</strong> to show it on the screen and readjust the size of the window to make sure the user sees everything.</p>
+<p>Guess what we need to do before setting the icon? Yep, another transformation, now from our <strong>Image</strong> object to an object of the <a class="reference external" href="https://docs.oracle.com/javase/10/docs/api/javax/swing/ImageIcon.html">ImageIcon</a> class.</p>
+<p>The following code shows our full <strong>showImage()</strong> method and how to do everything explained above:</p>
+<div class="highlight"><pre><span></span>  <span class="cm">/** This method is responsible for the exhibition of the image in the screen.</span>
+<span class="cm">   *  It receives a String with the path to an image inside a directory and shows</span>
+<span class="cm">   *  the image on the user&#39;s screen.  */</span>
+  <span class="kd">private</span> <span class="kt">void</span> <span class="nf">showImage</span><span class="p">(</span><span class="n">String</span> <span class="n">filePath</span><span class="p">)</span> <span class="p">{</span>
+
+    <span class="cm">/** Initializing the Mat object that represents the pixels of the image. */</span>
+    <span class="n">Mat</span> <span class="n">image</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Mat</span><span class="p">();</span>
+
+    <span class="cm">/** Using the method imread() to create a Mat object from the file chosen by</span>
+<span class="cm">     *  the user. The try/catch block is used because of a bug in the OpenCV Java</span>
+<span class="cm">     *  bindings that throws an Exception if the file chosen has less than 140</span>
+<span class="cm">     *  characters. If it isn&#39;t used, we would see an error message in the console. */</span>
+    <span class="k">try</span> <span class="p">{</span>
+      <span class="n">image</span> <span class="o">=</span> <span class="n">Imgcodecs</span><span class="p">.</span><span class="na">imread</span><span class="p">(</span><span class="n">filePath</span><span class="p">);</span>
+    <span class="p">}</span> <span class="k">catch</span> <span class="p">(</span><span class="n">Exception</span> <span class="n">e</span><span class="p">)</span> <span class="p">{</span>
+    <span class="p">}</span>
+
+    <span class="cm">/** Testing if the image was loaded as expected. The dataAddr() method points</span>
+<span class="cm">     *  to an internal data address. If it&#39;s equal to 0, the imread method wasn&#39;t</span>
+<span class="cm">     *  able to create a valid image from the chosen file. If it isn&#39;t, we create</span>
+<span class="cm">     *  an Image object from the Mat since we need to make this conversion to show</span>
+<span class="cm">     *  the resulting image on the screen. */</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">image</span><span class="p">.</span><span class="na">dataAddr</span><span class="p">()</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
+
+      <span class="cm">/** Showing the dialog box with an error message if the file isn&#39;t a valid</span>
+<span class="cm">       *  image. */</span>
+      <span class="n">JOptionPane</span><span class="p">.</span><span class="na">showConfirmDialog</span><span class="p">(</span><span class="kc">null</span><span class="p">,</span> <span class="s">&quot;The file chosen is not a valid image&quot;</span><span class="p">,</span>
+          <span class="s">&quot;Invalid Image&quot;</span><span class="p">,</span> <span class="n">JOptionPane</span><span class="p">.</span><span class="na">DEFAULT_OPTION</span><span class="p">,</span> <span class="n">JOptionPane</span><span class="p">.</span><span class="na">ERROR_MESSAGE</span><span class="p">);</span>
+    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
+
+      <span class="cm">/** Creating an Image object from the Mat object. */</span>
+      <span class="n">Image</span> <span class="n">loadedImage</span> <span class="o">=</span> <span class="n">toBufferedImage</span><span class="p">(</span><span class="n">image</span><span class="p">);</span>
+
+      <span class="cm">/** Setting the newly created Image as the Icon of</span>
+<span class="cm">       *  the JLabel that shows the image. */</span>
+      <span class="n">imageLabel</span><span class="p">.</span><span class="na">setIcon</span><span class="p">(</span><span class="k">new</span> <span class="n">ImageIcon</span><span class="p">(</span><span class="n">loadedImage</span><span class="p">));</span>
+
+      <span class="cm">/** Resizing the window to make sure that, if a new image is loaded,</span>
+<span class="cm">       *  its display on the screen doesn&#39;t get limited by the previous image</span>
+<span class="cm">       *  size. */</span>
+      <span class="n">pack</span><span class="p">();</span>
+    <span class="p">}</span>
+  <span class="p">}</span>
+</pre></div>
+<p>As you can see in the code above, there's a helper method that we didn't discussed so far, the <strong>toBufferedImage()</strong> method. It was made to receive a Mat object and return an <strong>Image</strong> object.</p>
+<p>The first step of the transformation is to find out if we're talking about a grayscale or BGR image. To find this informaton, we check the number of channels of our <strong>matImage</strong>, the image in question represented as a <strong>Mat</strong> object. If it has more than one channel, it's a BGR image (in fact, there will be three channels, one for each color of the RGB model). The variable <strong>type</strong> will store the information about what color model we're using. The <a class="reference external" href="https://docs.oracle.com/javase/10/docs/api/java/awt/image/BufferedImage.html#TYPE_BYTE_GRAY">TYPE_BYTE_GRAY</a> or the <a class="reference external" href="https://docs.oracle.com/javase/10/docs/api/java/awt/image/BufferedImage.html#TYPE_3BYTE_BGR">TYPE_3BYTE_BGR</a> property will tell it to the variable which model should we use.</p>
+<p>Now we need to have a tricky conversation. The content of the <strong>matImage</strong> object is the data about the image. We will take all of this content and put it on a byte array, since we're here representing the image as a 8-bit image. Let's call it <strong>buffer</strong>. Then, we will create the <strong>bufferedImage</strong> object from the <strong>BufferedImage</strong> class and pass to it all of the content from the <strong>matImage</strong> object, meaning, of course, the <strong>buffer</strong>. This is not a direct process, so hear me out.</p>
+<p>Since we have images from different sizes, we first need to find out what's the size of the <strong>buffer</strong> that we need. An object from the <strong>Mat</strong> class has rows, columns and channels to represent the pixels from an image. Each pixel, positioned in a point represented by a row and a column number, has one channel if it's a grayscale image or three if it's a color image. To discover the size of our <strong>buffer</strong> that stores the content of the image, we only need to multiply the number of channels with the number of rows and the number of columns.</p>
+<p>Next, we put all of the elements of <strong>matImage</strong> in the <strong>buffer</strong> using the <a class="reference external" href="https://docs.opencv.org/3.4/javadoc/org/opencv/core/Mat.html#get-int-int-byte:A-">get()</a> method from the <strong>Mat</strong> class. Now we're ready to create our <strong>BufferedImage</strong>.</p>
+<p>Before creating this object, it's important to remember that our <strong>bufferedImage</strong> needs to be of the same size as the <strong>matImage</strong> and have the corresponding type (8-bit grayscale or 8-bit color image, per example).</p>
+<p>Now the question is: how do we put the data from the <strong>buffer</strong> in the <strong>bufferedImage</strong>? Do not fear, my friend, it's a weird, but easy process.</p>
+<p>We only need to get the array of bytes of the <strong>bufferedImage</strong>. Then, we use the <a class="reference external" href="https://docs.oracle.com/javase/10/docs/api/java/lang/System.html#arraycopy(java.lang.Object,int,java.lang.Object,int,int)">arraycopy()</a> method from the <strong>System</strong> class to finalize our image.</p>
+<p>Inside our <strong>bufferedImage</strong> there's a <a class="reference external" href="https://docs.oracle.com/javase/10/docs/api/java/awt/image/DataBufferByte.html">DataBufferByte</a>, a class that encapsulates an array of bytes. The data in this class it's the destination that we need to find to pass the content of our <strong>buffer</strong>. This <a class="reference external" href="https://docs.oracle.com/javase/10/docs/api/java/awt/image/DataBuffer.html">DataBuffer</a> is encapsulated by a <a class="reference external" href="https://docs.oracle.com/javase/10/docs/api/java/awt/image/Raster.html">Raster</a>, a class that represents a rectangular array of pixels. We chain together a couple of get methods from those classes to get this data.</p>
+<p>If I were a betting man, I would bet that you didn't completely understood everything I've just written, but, by looking at the following piece of code, you probably will see that this is not a difficult process.</p>
+<div class="highlight"><pre><span></span>  <span class="cm">/** Helper method to transform a Mat object in a BufferedImage object. */</span>
+  <span class="kd">private</span> <span class="n">Image</span> <span class="nf">toBufferedImage</span><span class="p">(</span><span class="n">Mat</span> <span class="n">matImage</span><span class="p">)</span> <span class="p">{</span>
+
+    <span class="cm">/** Using the channels() method from Mat to determine if we have</span>
+<span class="cm">     *  a grayscale or BGR image. */</span>
+    <span class="kt">int</span> <span class="n">type</span> <span class="o">=</span> <span class="n">BufferedImage</span><span class="p">.</span><span class="na">TYPE_BYTE_GRAY</span><span class="p">;</span>
+    <span class="k">if</span> <span class="p">(</span><span class="n">matImage</span><span class="p">.</span><span class="na">channels</span><span class="p">()</span> <span class="o">&gt;</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+      <span class="n">type</span> <span class="o">=</span> <span class="n">BufferedImage</span><span class="p">.</span><span class="na">TYPE_3BYTE_BGR</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="cm">/** We need to create a byte array that will store the matImage contents.</span>
+<span class="cm">     *  We find the size of this array through the number of elements in the</span>
+<span class="cm">     *  Mat object. */</span>
+    <span class="kt">int</span> <span class="n">bufferSize</span> <span class="o">=</span> <span class="n">matImage</span><span class="p">.</span><span class="na">channels</span><span class="p">()</span><span class="o">*</span><span class="n">matImage</span><span class="p">.</span><span class="na">cols</span><span class="p">()</span><span class="o">*</span><span class="n">matImage</span><span class="p">.</span><span class="na">rows</span><span class="p">();</span>
+
+    <span class="cm">/** Creating the byte array. */</span>
+    <span class="kt">byte</span><span class="o">[]</span> <span class="n">buffer</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">byte</span><span class="o">[</span><span class="n">bufferSize</span><span class="o">]</span><span class="p">;</span>
+
+    <span class="cm">/** Using the get() method to put all of the elements of the Mat object</span>
+<span class="cm">     *  with the image inside the byte array. */</span>
+    <span class="n">matImage</span><span class="p">.</span><span class="na">get</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">buffer</span><span class="p">);</span>
+
+    <span class="cm">/** Creating a BufferedImage (subclass of Image) with the same size and</span>
+<span class="cm">     *  appropriate type as the image represented by the Mat object. */</span>
+    <span class="n">BufferedImage</span> <span class="n">bufferedImage</span> <span class="o">=</span> <span class="k">new</span> <span class="n">BufferedImage</span><span class="p">(</span><span class="n">matImage</span><span class="p">.</span><span class="na">cols</span><span class="p">(),</span> <span class="n">matImage</span><span class="p">.</span><span class="na">rows</span><span class="p">(),</span> <span class="n">type</span><span class="p">);</span>
+
+    <span class="cm">/** Getting the data from the DataBuffer (a class that encapsulates one or more data arrays)</span>
+<span class="cm">     *  of the BufferedImage object. The DataBuffer itself is encapsulated by a Raster, a class</span>
+<span class="cm">     *  that represents a rectangular array of pixels.</span>
+<span class="cm">     *  This step is done so that we can have access to the pixels of the BufferedImage object</span>
+<span class="cm">     *  that will receive the data from the Mat object. */</span>
+    <span class="kd">final</span> <span class="kt">byte</span><span class="o">[]</span> <span class="n">targetPixels</span> <span class="o">=</span> <span class="p">((</span><span class="n">DataBufferByte</span><span class="p">)</span> <span class="n">bufferedImage</span><span class="p">.</span><span class="na">getRaster</span><span class="p">().</span><span class="na">getDataBuffer</span><span class="p">()).</span><span class="na">getData</span><span class="p">();</span>
+
+    <span class="cm">/** Copying all of the byte array with the data from the Mat object to the pixels of the</span>
+<span class="cm">     *  BufferedImage, thus, creating an Image object that can be shown in a JLabel component. */</span>
+    <span class="n">System</span><span class="p">.</span><span class="na">arraycopy</span><span class="p">(</span><span class="n">buffer</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">targetPixels</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">buffer</span><span class="p">.</span><span class="na">length</span><span class="p">);</span>
+
+    <span class="k">return</span> <span class="n">bufferedImage</span><span class="p">;</span>
+  <span class="p">}</span>
+</pre></div>
+<p>That's it. It's also important to note that, in our application, if you don't choose an image, a message shows up informing you that you didn't choose a valid image, as you can see below:</p>
+<img alt="Screenshot of the Image Viewer application showing an error because the user tried to open a Markdown file, instead of an image." class="align-center" src="images/03-02-ImageViewerError.png" />
+<p>Here's the <a class="reference external" href="https://github.com/andrefellipe/dip/blob/master/src/Exercise01.java">link</a> for the full code if you need to check it out. Thanks for reading! Here's also a sneak peek of our next post about the OpenCV Library using today's application:</p>
+<img alt="Screenshot of the Image Viewer application showing our next application. In the image, there's a negative image of my face." class="align-center" src="images/03-03-ImageViewerSneakPeek.png" />
+</div>
+
+  </div>
+  <div class="tag-cloud">
+    <p>
+      <a href="https://andrefellipe.com/tag/java.html">java</a>
+      <a href="https://andrefellipe.com/tag/swing.html">swing</a>
+      <a href="https://andrefellipe.com/tag/opencv.html">opencv</a>
+      <a href="https://andrefellipe.com/tag/dip.html">dip</a>
+    </p>
+  </div>
+
+  <div class="center social-share">
+    <p>    Like this article? Share it with your friends!
+</p>
+    <div class="addthis_native_toolbox"></div>
+    <div class="addthis_sharing_toolbox"></div>
+    <div class="addthis_inline_share_toolbox"></div>
+  </div>
+
+
+    <div class="addthis_relatedposts_inline"></div>
+
+
+<!-- Disqus -->
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'andrefellipe';
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>
+        Please enable JavaScript to view comments.
+
+</noscript>
+<!-- End Disqus -->
+</article>
+
+    <footer>
+<p>
+  &copy;  2018 - This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>
+</p>
+<p>    Powered by <a href="http://getpelican.com" target="_blank">Pelican</a> - <a href="https://github.com/alexandrevicenzi/flex" target="_blank">Flex</a> theme by <a href="http://alexandrevicenzi.com" target="_blank">Alexandre Vicenzi</a>
+</p><p>
+  <a rel="license"
+     href="http://creativecommons.org/licenses/by-sa/4.0/"
+     target="_blank">
+    <img alt="Creative Commons License"
+         title="Creative Commons License"
+         style="border-width:0"
+           src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png"
+         width="80"
+         height="15"/>
+  </a>
+</p>    </footer>
+  </main>
+
+
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5ba05ddbeb328e87" async="async"></script>
+
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " Andre Fellipe ",
+  "url" : "https://andrefellipe.com",
+  "image": "./images/badge.jpeg",
+  "description": "Andre's personal site"
+}
+</script>
+
+</body>
+</html>
