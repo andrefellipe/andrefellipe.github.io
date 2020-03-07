@@ -6,7 +6,7 @@ Hello, OpenCV and Java
 :tags: java; opencv; dip
 :category: digital image processing
 :slug: opencv-java
-:authors: andre fellipe
+:authors: Andre Fellipe da Silva
 :summary: A tutorial to use OpenCV with Java. This post was written to the sound of Hall & Oates' `Big Bam Boom`_. You can listen one of the songs here_.
 
 This tutorial will not teach you how to compile your own OpenCV using the source code. I recommend that you try this at a future date for learning purposes. At this moment, let's try a different approach. I am using Ubuntu 18.04 and this tutorial will only work for distributions of the Linux operating system. You will see why below.

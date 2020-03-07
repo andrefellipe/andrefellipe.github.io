@@ -6,7 +6,7 @@ Negative andre
 :tags: java; swing; opencv; dip
 :category: digital image processing
 :slug: negative-opencv
-:authors: André Fellipe
+:authors: Andre Fellipe da Silva
 :summary: An application that changes pixels values in an image using the OpenCV library. This post was written to the sound of U2's War_. You can listen one of the songs here_.
 
 Good news, everyone: I'm running again. I've restarted yesterday and I hope to continue for a long time. It's been a while, so I'm taking it easy.

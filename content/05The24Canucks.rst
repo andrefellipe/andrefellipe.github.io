@@ -6,7 +6,7 @@ The 24 Canucks
 :tags: java; swing; opencv; dip
 :category: digital image processing
 :slug: swap-regions-opencv
-:authors: André Fellipe
+:authors: Andre Fellipe da Silva
 :summary: An application that swaps rectangular regions of an image using the OpenCV library. This post was written to the sound of Pavement's `Crooked Rain, Crooked Rain`_. You can listen one of the songs here_.
 
 A question before we start: is Pavement the greatest band ever?

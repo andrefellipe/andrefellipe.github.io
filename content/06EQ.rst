@@ -6,7 +6,7 @@ E&Q Online
 :tags: freelance, html, css, javascript, php
 :category: portfolio
 :slug: eq
-:authors: André Fellipe
+:authors: Andre Fellipe da Silva
 :summary: A brief description of one freelance project I've just did and how it came about. This post was written to the sound of The Clash's `London Calling`_. You can listen one of the songs here_.
 
 During the first semester of 2018, I was an intern at a small local company. The company's name is `Engenharia & Qualidade`_ and it has been around for more than two decades. It has 10 employees as of May/2019, including the two main partners, and a long range of services that goes from structured cabling to studies of grounding and soil resistivity testing of substations. Basically, the company can solve anything in the fields of electrical installations and telecommunications thanks to the expertise of its two owners. Its major client is one of the biggest (if not the biggest) supermarket chains of my state, Nordestão_.

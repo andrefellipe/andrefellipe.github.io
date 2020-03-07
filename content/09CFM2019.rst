@@ -6,7 +6,7 @@ Quant boys, quant boys, whatcha gonna do
 :tags: statistics, data science, python
 :category: portfolio
 :slug: cfm-2019
-:authors: André Fellipe
+:authors: Andre Fellipe da Silva
 :summary: At the end of 2019, I participated in another data science competition, this time related to finance. This post was written to the sound of The Police's `Outlandos d'Amour'`_. You can listen one of the songs here_.
 
 I participated in my second data science competition last month and it was again a worthy experience.

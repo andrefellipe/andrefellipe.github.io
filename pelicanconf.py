@@ -2,14 +2,14 @@
 # -*- coding: utf-8 -*- #
 from __future__ import unicode_literals
 
-AUTHOR = u'André Fellipe'
+AUTHOR = u'Andre Fellipe'
 SITEURL = 'https://andrefellipe.com'
-SITENAME = u"André Fellipe"
-SITETITLE = u'André Fellipe'
+SITENAME = u"Andre Fellipe"
+SITETITLE = u'Andre Fellipe'
 SITESUBTITLE = u'made on the internet'
-SITEDESCRIPTION = "André's personal site"
-SITELOGO = SITEURL + '/images/pic.jpg'
-USER_LOGO_URL = SITEURL + '/images/pic.jpg'
+SITEDESCRIPTION = "Andre's personal site"
+SITELOGO = './images/badge.jpeg'
+USER_LOGO_URL = './images/badge.jpeg'
 RELATIVE_URLS = True
 DISABLE_URL_HASH = True
 PYGMENTS_STYLE = 'native'

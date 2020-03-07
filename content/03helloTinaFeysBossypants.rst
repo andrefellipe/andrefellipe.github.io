@@ -6,7 +6,7 @@ Hello, Tina Fey's Bossypants
 :tags: java; swing; opencv; dip
 :category: digital image processing
 :slug: tina-fey-opencv
-:authors: André Fellipe
+:authors: Andre Fellipe da Silva
 :summary: An application that loads an image using the OpenCV library. This post was written to the sound of `San Cisco's`_ eponymous album. You can listen one of the songs here_.
 
 Here's a not so hot take: Tina Fey is awesome. Her accomplishments as a performer, writer and producer on Saturday Night Live, 30 Rock, Mean Girls, Unbreakable Kimmy Schmidt and other projects make her one of the greatest comedy minds of the 21st century.

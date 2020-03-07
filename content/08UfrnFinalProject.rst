@@ -6,7 +6,7 @@ This is the end, beautiful friend
 :tags: matlab, python, ufrn
 :category: portfolio
 :slug: ufrn-final-project
-:authors: André Fellipe
+:authors: Andre Fellipe da Silva
 :summary: I've presented my final project at the university last week. This post was written to the sound of `The Doors'`_ eponymous album. You can listen one of the songs here_.
 
 So, I'm only a few days away from officially becoming an electrical engineer. The final step was taken last thursday. I did my presentation and the professors loved it. One of the them even invited me to do my master's degree with him.

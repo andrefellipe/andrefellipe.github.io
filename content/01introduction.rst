@@ -6,7 +6,7 @@ Hello World, Hello Pelican
 :tags: pelican;
 :category: Introduction
 :slug: introduction
-:authors: André Fellipe
+:authors: Andre Fellipe da Silva
 :summary: A brief introduction to the site. This post was written to the sound of The Replacement's Tim_. You can listen one of the songs here_.
 
 **andrefellipe.com** was an idea that I had a long time ago to support my personal projects.

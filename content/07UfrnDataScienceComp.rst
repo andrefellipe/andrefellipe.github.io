@@ -6,7 +6,7 @@ Is it just me, or is it hot in here?
 :tags: statistics, data science, python, ufrn
 :category: portfolio
 :slug: ufrn-data-science-comp-2019
-:authors: André Fellipe
+:authors: Andre Fellipe da Silva
 :summary: Let's talk about my first participation on a data science competition. This post was written to the sound of The Killers' `Hot Fuss`_. You can listen one of the songs here_.
 
 A colleague of mine invited me to create a team to win the 2019 UFRN Data Science Competition last month. I've never participated in one before and I thought that it was a cool experience. Our five-person group had a couple of days to do any kind of analysis on meteorological data provided by INMET, the government agency responsible for this kind of stuff.
