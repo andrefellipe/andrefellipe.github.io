@@ -24,6 +24,5 @@ I would also like to thank the second best student of the Federal University of 
 .. _Python: https://www.python.org/
 .. _Flex: https://github.com/alexandrevicenzi/Flex
 .. _`Alexandre Vicenzi`: http://www.alexandrevicenzi.com/
-.. _UFRN: http://www.ufrn.br/
 .. _`Vítor Saraiva`: https://github.com/vitorsr
 .. _website: https://vitorsr.github.io/
