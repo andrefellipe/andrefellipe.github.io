@@ -256,7 +256,7 @@ While nothing is as good as **The Alien Costume** arc, the Hobgoblin's arc has i
 
 .. class:: center
 
-*I took a gamble that Peter Parker was the luckiest man on Earth. - Chameleon*
+*"I took a gamble that Peter Parker was the luckiest man on Earth." - Chameleon*
 
 **Written by**: John Semper.
 
