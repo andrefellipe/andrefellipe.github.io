@@ -2,7 +2,7 @@ Title: About
 
 ## Who I am
 
-Hello, I'm Andre Fellipe da Silva and I'm a participant of AWS Tech U, an accelerated career development program for new graduates who want to advance their skills and help customers design flexible and resilient cloud-based solutions at Amazon Web Services.
+Hello, I'm Andre and I'm a Solutions Architect at AWS. I act as a trusted advisor for enterprise customers that want flexible and resilient cloud-based solutions.
 
 I'm also a B. Eng. from the Federal University of Rio Grande do Norte, Brazil.
 
