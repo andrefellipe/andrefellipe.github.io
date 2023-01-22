@@ -113,7 +113,7 @@
 <h2>Checking if you have Java</h2>
 <p>Open the terminal (ctrl + alt + T).</p>
 <p>Run the following command to check if you already have Java:</p>
-<div class="highlight"><pre><span></span><span class="gp">$</span> java -version
+<div class="highlight"><pre><span></span><span class="gp">$ </span>java<span class="w"> </span>-version
 </pre></div>
 <p>You are good to go if you see something like this:</p>
 <div class="highlight"><pre><span></span><span class="go">java version &quot;1.8.0_181&quot;</span>
@@ -123,42 +123,42 @@
 <p>You may have another version of Oracle's Java or OpenJDK, but this should not be a problem.</p>
 <p>If you do not see the message above or something similar, you will need to install Java. If you can see the message, jump to the next section.</p>
 <p>Run the following commands to install Oracle's Java 8:</p>
-<div class="highlight"><pre><span></span><span class="gp">$</span> sudo add-apt-repository ppa:webupd8team/java
-<span class="gp">$</span> sudo apt-get update
-<span class="gp">$</span> sudo apt-get install oracle-java8-installer
+<div class="highlight"><pre><span></span><span class="gp">$ </span>sudo<span class="w"> </span>add-apt-repository<span class="w"> </span>ppa:webupd8team/java
+<span class="gp">$ </span>sudo<span class="w"> </span>apt-get<span class="w"> </span>update
+<span class="gp">$ </span>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>oracle-java8-installer
 </pre></div>
 <p>Run the <strong>java -version</strong> command again to make sure everything is fine.</p>
 </div>
 <div class="section" id="download-opencv">
 <h2>Download OpenCV</h2>
 <p>Run the following command to install the OpenCV library:</p>
-<div class="highlight"><pre><span></span><span class="gp">$</span> sudo apt-get install libopencv-dev
+<div class="highlight"><pre><span></span><span class="gp">$ </span>sudo<span class="w"> </span>apt-get<span class="w"> </span>install<span class="w"> </span>libopencv-dev
 </pre></div>
 <p>That's it.</p>
 </div>
 <div class="section" id="creating-our-first-program">
 <h2>Creating Our First Program</h2>
 <p>Using your favorite text editor, create a file named <strong>HelloOpenCVJava.java</strong>. I am using <a class="reference external" href="https://en.wikipedia.org/wiki/Vim_(text_editor)">Vim</a>, so the command would be:</p>
-<div class="highlight"><pre><span></span><span class="gp">$</span> vim HelloOpenCVJava.java
+<div class="highlight"><pre><span></span><span class="gp">$ </span>vim<span class="w"> </span>HelloOpenCVJava.java
 </pre></div>
 <p>Now, copy and paste the following code:</p>
-<div class="highlight"><pre><span></span><span class="kn">import</span> <span class="nn">org.opencv.core.Core</span><span class="p">;</span>
+<div class="highlight"><pre><span></span><span class="kn">import</span><span class="w"> </span><span class="nn">org.opencv.core.Core</span><span class="p">;</span>
 
-<span class="kd">public</span> <span class="kd">class</span> <span class="nc">HelloOpenCVJava</span> <span class="p">{</span>
+<span class="kd">public</span><span class="w"> </span><span class="kd">class</span> <span class="nc">HelloOpenCVJava</span><span class="w"> </span><span class="p">{</span>
 
-  <span class="cm">/** Loading the OpenCV library. */</span>
-  <span class="kd">static</span> <span class="p">{</span>
-    <span class="n">System</span><span class="p">.</span><span class="na">loadLibrary</span><span class="p">(</span><span class="n">Core</span><span class="p">.</span><span class="na">NATIVE_LIBRARY_NAME</span><span class="p">);</span>
-  <span class="p">}</span>
+<span class="w">  </span><span class="cm">/** Loading the OpenCV library. */</span>
+<span class="w">  </span><span class="kd">static</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">loadLibrary</span><span class="p">(</span><span class="n">Core</span><span class="p">.</span><span class="na">NATIVE_LIBRARY_NAME</span><span class="p">);</span>
+<span class="w">  </span><span class="p">}</span>
 
-  <span class="kd">public</span> <span class="kd">static</span> <span class="kt">void</span> <span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span> <span class="n">args</span><span class="p">)</span> <span class="p">{</span>
+<span class="w">  </span><span class="kd">public</span><span class="w"> </span><span class="kd">static</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">main</span><span class="p">(</span><span class="n">String</span><span class="o">[]</span><span class="w"> </span><span class="n">args</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 
-    <span class="cm">/** Printing the OpenCV version. */</span>
-    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Hello OpenCV &quot;</span> <span class="o">+</span> <span class="n">Core</span><span class="p">.</span><span class="na">VERSION</span> <span class="o">+</span> <span class="s">&quot;!&quot;</span><span class="p">);</span>
+<span class="w">    </span><span class="cm">/** Printing the OpenCV version. */</span>
+<span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Hello OpenCV &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">Core</span><span class="p">.</span><span class="na">VERSION</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot;!&quot;</span><span class="p">);</span>
 
-    <span class="cm">/** Printing the Java version. */</span>
-    <span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Hello to you too, Java &quot;</span> <span class="o">+</span> <span class="n">System</span><span class="p">.</span><span class="na">getProperty</span><span class="p">(</span><span class="s">&quot;java.version&quot;</span><span class="p">)</span> <span class="o">+</span> <span class="s">&quot;!&quot;</span><span class="p">);</span>
-  <span class="p">}</span>
+<span class="w">    </span><span class="cm">/** Printing the Java version. */</span>
+<span class="w">    </span><span class="n">System</span><span class="p">.</span><span class="na">out</span><span class="p">.</span><span class="na">println</span><span class="p">(</span><span class="s">&quot;Hello to you too, Java &quot;</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">System</span><span class="p">.</span><span class="na">getProperty</span><span class="p">(</span><span class="s">&quot;java.version&quot;</span><span class="p">)</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="s">&quot;!&quot;</span><span class="p">);</span>
+<span class="w">  </span><span class="p">}</span>
 
 <span class="p">}</span>
 </pre></div>
@@ -173,7 +173,7 @@
 <span class="go">|__ HelloOpenCVJava.java</span>
 </pre></div>
 <p>If it is, run the following command to compile HelloOpenCVJava.java:</p>
-<div class="highlight"><pre><span></span><span class="gp">$</span> javac -cp /usr/share/OpenCV/java/opencv-320.jar HelloOpenCVJava.java
+<div class="highlight"><pre><span></span><span class="gp">$ </span>javac<span class="w"> </span>-cp<span class="w"> </span>/usr/share/OpenCV/java/opencv-320.jar<span class="w"> </span>HelloOpenCVJava.java
 </pre></div>
 <p>Now you should have your bytecode class file <strong>HelloOpenCVJava.class</strong>. Here's how the directory should look like:</p>
 <div class="highlight"><pre><span></span><span class="go">.</span>
@@ -182,7 +182,7 @@
 </pre></div>
 <p>The <a class="reference external" href="https://docs.oracle.com/javase/8/docs/technotes/tools/windows/findingclasses.html#BABBFCIJ">-cp flag</a> tells the compiler to set the system property java.class.path, which is a list of directories, JAR files and ZIP files that contain class files. We are using here to indicate that we want to find our <strong>opencv-320.jar</strong>.</p>
 <p>We have everything we need to run our application now. We do this with the following command:</p>
-<div class="highlight"><pre><span></span><span class="gp">$</span> java -Djava.library.path<span class="o">=</span>/usr/lib/jni -cp /usr/share/OpenCV/java/opencv-320.jar:. HelloOpenCVJava
+<div class="highlight"><pre><span></span><span class="gp">$ </span>java<span class="w"> </span>-Djava.library.path<span class="o">=</span>/usr/lib/jni<span class="w"> </span>-cp<span class="w"> </span>/usr/share/OpenCV/java/opencv-320.jar:.<span class="w"> </span>HelloOpenCVJava
 </pre></div>
 <p><strong>-Djava.library.path</strong> sets the <strong>java.library.path</strong> property (-D is a flag to set a system property) to inform the JVM where it can locate native libraries. This property is part of the system environment used by Java, in order to find and load native libraries used by an application.</p>
 <p>This should be your output:</p>

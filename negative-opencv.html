@@ -127,17 +127,17 @@
 <p>A region of interest (ROI) is a part of an image that we want to operate on. We can use any polygon to create ROIs. Here, we're using a rectangle. The user can choose the coordinates of the first point, the upper-left corner of the rectangle, and of the second point, the lower-right corner of the rectangle. If the user doesn't want to choose the points, the full image will compose our ROI. The radio buttons on the interface inform us what the user wants.</p>
 <p>Also, to make it a more smooth user experience, we validate the user's input in the fields to make sure that he has chosen a valid positive integer (the <strong>getValueFromField()</strong> method is responsible for this) and that this number is a valid pixel of the image (you can't choose the pixel in row 3000 and column 2000 if the image's resolution is 500x500).</p>
 <p>Let's take a look at the code that does what was described:</p>
-<div class="highlight"><pre><span></span>  <span class="cm">/**</span>
+<div class="highlight"><pre><span></span><span class="w">  </span><span class="cm">/**</span>
 <span class="cm">   * Method that detects the button pressed by the user and performs</span>
 <span class="cm">   * the appropriate operation.</span>
 <span class="cm">   */</span>
-  <span class="kd">private</span> <span class="kt">void</span> <span class="nf">operationsButtonActionPerformed</span><span class="p">(</span><span class="n">ActionEvent</span> <span class="n">e</span><span class="p">)</span> <span class="p">{</span>
+<span class="w">  </span><span class="kd">private</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">operationsButtonActionPerformed</span><span class="p">(</span><span class="n">ActionEvent</span><span class="w"> </span><span class="n">e</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
 
-    <span class="cm">/** Creating a full copy of the original image and storing it at</span>
+<span class="w">    </span><span class="cm">/** Creating a full copy of the original image and storing it at</span>
 <span class="cm">     *  another Mat object to keep the original unaltered. */</span>
-    <span class="n">currentImage</span> <span class="o">=</span> <span class="n">originalImage</span><span class="p">.</span><span class="na">clone</span><span class="p">();</span>
+<span class="w">    </span><span class="n">currentImage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">originalImage</span><span class="p">.</span><span class="na">clone</span><span class="p">();</span>
 
-    <span class="cm">/** Checking which option the user chose in relation to where to</span>
+<span class="w">    </span><span class="cm">/** Checking which option the user chose in relation to where to</span>
 <span class="cm">     *  apply the operation. If it&#39;s in the full image, then the first</span>
 <span class="cm">     *  vertice of the rectangle that defines the region should be at the</span>
 <span class="cm">     *  origin of the image and the second vertices at the last pixel, whose</span>
@@ -146,70 +146,70 @@
 <span class="cm">     *  the application must get the value from the fields and define the points</span>
 <span class="cm">     *  accordingly.</span>
 <span class="cm">     */</span>
-    <span class="k">if</span> <span class="p">(</span><span class="n">fullImageChosen</span><span class="p">)</span> <span class="p">{</span>
-      <span class="n">firstPointX</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-      <span class="n">firstPointY</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
-      <span class="n">secondPointX</span> <span class="o">=</span> <span class="n">currentImage</span><span class="p">.</span><span class="na">cols</span><span class="p">();</span>
-      <span class="n">secondPointY</span> <span class="o">=</span> <span class="n">currentImage</span><span class="p">.</span><span class="na">rows</span><span class="p">();</span>
-    <span class="p">}</span> <span class="k">else</span> <span class="p">{</span>
-      <span class="n">firstPointX</span> <span class="o">=</span> <span class="n">getValueFromField</span><span class="p">(</span><span class="n">firstPointXField</span><span class="p">);</span>
-      <span class="n">firstPointY</span> <span class="o">=</span> <span class="n">getValueFromField</span><span class="p">(</span><span class="n">firstPointYField</span><span class="p">);</span>
-      <span class="n">secondPointX</span> <span class="o">=</span> <span class="n">getValueFromField</span><span class="p">(</span><span class="n">secondPointXField</span><span class="p">);</span>
-      <span class="n">secondPointY</span> <span class="o">=</span> <span class="n">getValueFromField</span><span class="p">(</span><span class="n">secondPointYField</span><span class="p">);</span>
-    <span class="p">}</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">fullImageChosen</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="n">firstPointX</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="w">      </span><span class="n">firstPointY</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="w">      </span><span class="n">secondPointX</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">currentImage</span><span class="p">.</span><span class="na">cols</span><span class="p">();</span>
+<span class="w">      </span><span class="n">secondPointY</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">currentImage</span><span class="p">.</span><span class="na">rows</span><span class="p">();</span>
+<span class="w">    </span><span class="p">}</span><span class="w"> </span><span class="k">else</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="n">firstPointX</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">getValueFromField</span><span class="p">(</span><span class="n">firstPointXField</span><span class="p">);</span>
+<span class="w">      </span><span class="n">firstPointY</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">getValueFromField</span><span class="p">(</span><span class="n">firstPointYField</span><span class="p">);</span>
+<span class="w">      </span><span class="n">secondPointX</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">getValueFromField</span><span class="p">(</span><span class="n">secondPointXField</span><span class="p">);</span>
+<span class="w">      </span><span class="n">secondPointY</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">getValueFromField</span><span class="p">(</span><span class="n">secondPointYField</span><span class="p">);</span>
+<span class="w">    </span><span class="p">}</span>
 
-    <span class="cm">/**</span>
+<span class="w">    </span><span class="cm">/**</span>
 <span class="cm">     * Creating the points according to the choice made by the user.</span>
 <span class="cm">     */</span>
-    <span class="n">firstPoint</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Point</span><span class="p">(</span><span class="n">firstPointX</span><span class="p">,</span> <span class="n">firstPointY</span><span class="p">);</span>
-    <span class="n">secondPoint</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Point</span><span class="p">(</span><span class="n">secondPointX</span><span class="p">,</span> <span class="n">secondPointY</span><span class="p">);</span>
+<span class="w">    </span><span class="n">firstPoint</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Point</span><span class="p">(</span><span class="n">firstPointX</span><span class="p">,</span><span class="w"> </span><span class="n">firstPointY</span><span class="p">);</span>
+<span class="w">    </span><span class="n">secondPoint</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Point</span><span class="p">(</span><span class="n">secondPointX</span><span class="p">,</span><span class="w"> </span><span class="n">secondPointY</span><span class="p">);</span>
 
-    <span class="cm">/**</span>
+<span class="w">    </span><span class="cm">/**</span>
 <span class="cm">     * Checking if the user chose a value outside of the image, something</span>
 <span class="cm">     * that is not acceptable. If the user chose a value beyond the image&#39;s</span>
 <span class="cm">     * height or width, then this value is readjusted to the image&#39;s border value.</span>
 <span class="cm">     */</span>
-    <span class="k">if</span> <span class="p">(</span><span class="n">firstPoint</span><span class="p">.</span><span class="na">x</span> <span class="o">&gt;</span> <span class="n">originalImage</span><span class="p">.</span><span class="na">width</span><span class="p">()</span> <span class="o">||</span> <span class="n">firstPoint</span><span class="p">.</span><span class="na">y</span> <span class="o">&gt;</span> <span class="n">originalImage</span><span class="p">.</span><span class="na">height</span><span class="p">()</span>
-        <span class="o">||</span> <span class="n">secondPoint</span><span class="p">.</span><span class="na">x</span> <span class="o">&gt;</span> <span class="n">originalImage</span><span class="p">.</span><span class="na">width</span><span class="p">()</span> <span class="o">||</span> <span class="n">secondPoint</span><span class="p">.</span><span class="na">y</span> <span class="o">&gt;</span> <span class="n">originalImage</span><span class="p">.</span><span class="na">height</span><span class="p">())</span> <span class="p">{</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">firstPoint</span><span class="p">.</span><span class="na">x</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">originalImage</span><span class="p">.</span><span class="na">width</span><span class="p">()</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">firstPoint</span><span class="p">.</span><span class="na">y</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">originalImage</span><span class="p">.</span><span class="na">height</span><span class="p">()</span>
+<span class="w">        </span><span class="o">||</span><span class="w"> </span><span class="n">secondPoint</span><span class="p">.</span><span class="na">x</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">originalImage</span><span class="p">.</span><span class="na">width</span><span class="p">()</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">secondPoint</span><span class="p">.</span><span class="na">y</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">originalImage</span><span class="p">.</span><span class="na">height</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
 
-      <span class="k">if</span> <span class="p">(</span><span class="n">firstPoint</span><span class="p">.</span><span class="na">x</span> <span class="o">&gt;</span> <span class="n">originalImage</span><span class="p">.</span><span class="na">width</span><span class="p">())</span> <span class="p">{</span>
-        <span class="n">firstPoint</span><span class="p">.</span><span class="na">x</span> <span class="o">=</span> <span class="n">originalImage</span><span class="p">.</span><span class="na">width</span><span class="p">();</span>
-        <span class="n">firstPointXField</span><span class="p">.</span><span class="na">setText</span><span class="p">(</span><span class="n">String</span><span class="p">.</span><span class="na">valueOf</span><span class="p">((</span><span class="kt">int</span><span class="p">)</span> <span class="n">firstPoint</span><span class="p">.</span><span class="na">x</span><span class="p">));</span>
-      <span class="p">}</span>
-      <span class="k">if</span> <span class="p">(</span><span class="n">firstPoint</span><span class="p">.</span><span class="na">y</span> <span class="o">&gt;</span> <span class="n">originalImage</span><span class="p">.</span><span class="na">height</span><span class="p">())</span> <span class="p">{</span>
-        <span class="n">firstPoint</span><span class="p">.</span><span class="na">y</span> <span class="o">=</span> <span class="n">originalImage</span><span class="p">.</span><span class="na">height</span><span class="p">();</span>
-        <span class="n">firstPointYField</span><span class="p">.</span><span class="na">setText</span><span class="p">(</span><span class="n">String</span><span class="p">.</span><span class="na">valueOf</span><span class="p">((</span><span class="kt">int</span><span class="p">)</span> <span class="n">firstPoint</span><span class="p">.</span><span class="na">y</span><span class="p">));</span>
-      <span class="p">}</span>
-      <span class="k">if</span> <span class="p">(</span><span class="n">secondPoint</span><span class="p">.</span><span class="na">x</span> <span class="o">&gt;</span> <span class="n">originalImage</span><span class="p">.</span><span class="na">width</span><span class="p">())</span> <span class="p">{</span>
-        <span class="n">secondPoint</span><span class="p">.</span><span class="na">x</span> <span class="o">=</span> <span class="n">originalImage</span><span class="p">.</span><span class="na">width</span><span class="p">();</span>
-        <span class="n">secondPointXField</span><span class="p">.</span><span class="na">setText</span><span class="p">(</span><span class="n">String</span><span class="p">.</span><span class="na">valueOf</span><span class="p">((</span><span class="kt">int</span><span class="p">)</span> <span class="n">secondPoint</span><span class="p">.</span><span class="na">x</span><span class="p">));</span>
-      <span class="p">}</span>
-      <span class="k">if</span> <span class="p">(</span><span class="n">secondPoint</span><span class="p">.</span><span class="na">y</span> <span class="o">&gt;</span> <span class="n">originalImage</span><span class="p">.</span><span class="na">height</span><span class="p">())</span> <span class="p">{</span>
-        <span class="n">secondPoint</span><span class="p">.</span><span class="na">y</span> <span class="o">=</span> <span class="n">originalImage</span><span class="p">.</span><span class="na">height</span><span class="p">();</span>
-        <span class="n">secondPointYField</span><span class="p">.</span><span class="na">setText</span><span class="p">(</span><span class="n">String</span><span class="p">.</span><span class="na">valueOf</span><span class="p">((</span><span class="kt">int</span><span class="p">)</span> <span class="n">secondPoint</span><span class="p">.</span><span class="na">y</span><span class="p">));</span>
-      <span class="p">}</span>
-    <span class="p">}</span>
+<span class="w">      </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">firstPoint</span><span class="p">.</span><span class="na">x</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">originalImage</span><span class="p">.</span><span class="na">width</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">firstPoint</span><span class="p">.</span><span class="na">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">originalImage</span><span class="p">.</span><span class="na">width</span><span class="p">();</span>
+<span class="w">        </span><span class="n">firstPointXField</span><span class="p">.</span><span class="na">setText</span><span class="p">(</span><span class="n">String</span><span class="p">.</span><span class="na">valueOf</span><span class="p">((</span><span class="kt">int</span><span class="p">)</span><span class="w"> </span><span class="n">firstPoint</span><span class="p">.</span><span class="na">x</span><span class="p">));</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">      </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">firstPoint</span><span class="p">.</span><span class="na">y</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">originalImage</span><span class="p">.</span><span class="na">height</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">firstPoint</span><span class="p">.</span><span class="na">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">originalImage</span><span class="p">.</span><span class="na">height</span><span class="p">();</span>
+<span class="w">        </span><span class="n">firstPointYField</span><span class="p">.</span><span class="na">setText</span><span class="p">(</span><span class="n">String</span><span class="p">.</span><span class="na">valueOf</span><span class="p">((</span><span class="kt">int</span><span class="p">)</span><span class="w"> </span><span class="n">firstPoint</span><span class="p">.</span><span class="na">y</span><span class="p">));</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">      </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">secondPoint</span><span class="p">.</span><span class="na">x</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">originalImage</span><span class="p">.</span><span class="na">width</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">secondPoint</span><span class="p">.</span><span class="na">x</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">originalImage</span><span class="p">.</span><span class="na">width</span><span class="p">();</span>
+<span class="w">        </span><span class="n">secondPointXField</span><span class="p">.</span><span class="na">setText</span><span class="p">(</span><span class="n">String</span><span class="p">.</span><span class="na">valueOf</span><span class="p">((</span><span class="kt">int</span><span class="p">)</span><span class="w"> </span><span class="n">secondPoint</span><span class="p">.</span><span class="na">x</span><span class="p">));</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">      </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">secondPoint</span><span class="p">.</span><span class="na">y</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="n">originalImage</span><span class="p">.</span><span class="na">height</span><span class="p">())</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">secondPoint</span><span class="p">.</span><span class="na">y</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">originalImage</span><span class="p">.</span><span class="na">height</span><span class="p">();</span>
+<span class="w">        </span><span class="n">secondPointYField</span><span class="p">.</span><span class="na">setText</span><span class="p">(</span><span class="n">String</span><span class="p">.</span><span class="na">valueOf</span><span class="p">((</span><span class="kt">int</span><span class="p">)</span><span class="w"> </span><span class="n">secondPoint</span><span class="p">.</span><span class="na">y</span><span class="p">));</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
 </pre></div>
 <p>Our rectangle is created with the help from an object from the <a class="reference external" href="https://docs.opencv.org/3.4/javadoc/org/opencv/core/Rect.html">Rect</a> class. We use its constructor to create a rectangle with the vertices defined by the chosen two points.</p>
 <p>To get our ROI, we create a new object from the <strong>Mat</strong> class, <strong>roiMat</strong>. This object is created by using a <a class="reference external" href="https://docs.opencv.org/3.4/javadoc/org/opencv/core/Mat.html#Mat-org.opencv.core.Mat-org.opencv.core.Rect-">constructor</a> from the <strong>Mat</strong> class that allows us to pass a <strong>Mat</strong> object and a <strong>Rect</strong> object. The result is only the content from the <strong>Mat</strong> that resides in the area defined by the <strong>Rect</strong>. If the chosen points were (0,0) and (10,10), our <strong>roiMat</strong> would be a 10x10 square with the content of the original image from this exact area.</p>
 <p>As we did previously, we need to pass the content from the ROI to a byte array, our good old <strong>buffer</strong>, a process that we've seen here before.</p>
 <p>The following code creates our ROI and pass its content to our <strong>buffer</strong>:</p>
-<div class="highlight"><pre><span></span>    <span class="cm">/**</span>
+<div class="highlight"><pre><span></span><span class="w">    </span><span class="cm">/**</span>
 <span class="cm">     * Creating a Mat object with the region of interest chosen by the user.</span>
 <span class="cm">     */</span>
-    <span class="n">Mat</span> <span class="n">roiMat</span> <span class="o">=</span> <span class="k">new</span> <span class="n">Mat</span><span class="p">(</span><span class="n">currentImage</span><span class="p">,</span> <span class="k">new</span> <span class="n">Rect</span><span class="p">(</span><span class="n">firstPoint</span><span class="p">,</span> <span class="n">secondPoint</span><span class="p">));</span>
+<span class="w">    </span><span class="n">Mat</span><span class="w"> </span><span class="n">roiMat</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Mat</span><span class="p">(</span><span class="n">currentImage</span><span class="p">,</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="n">Rect</span><span class="p">(</span><span class="n">firstPoint</span><span class="p">,</span><span class="w"> </span><span class="n">secondPoint</span><span class="p">));</span>
 
-    <span class="cm">/** We need to create a byte array that will store the matImage contents.</span>
+<span class="w">    </span><span class="cm">/** We need to create a byte array that will store the matImage contents.</span>
 <span class="cm">     *  We find the size of this array through the number of elements in the</span>
 <span class="cm">     *  Mat object. */</span>
-    <span class="kt">int</span> <span class="n">bufferSize</span> <span class="o">=</span> <span class="n">roiMat</span><span class="p">.</span><span class="na">channels</span><span class="p">()</span> <span class="o">*</span> <span class="n">roiMat</span><span class="p">.</span><span class="na">cols</span><span class="p">()</span> <span class="o">*</span> <span class="n">roiMat</span><span class="p">.</span><span class="na">rows</span><span class="p">();</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">bufferSize</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">roiMat</span><span class="p">.</span><span class="na">channels</span><span class="p">()</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">roiMat</span><span class="p">.</span><span class="na">cols</span><span class="p">()</span><span class="w"> </span><span class="o">*</span><span class="w"> </span><span class="n">roiMat</span><span class="p">.</span><span class="na">rows</span><span class="p">();</span>
 
-    <span class="cm">/** Creating the byte array. */</span>
-    <span class="kt">byte</span><span class="o">[]</span> <span class="n">buffer</span> <span class="o">=</span> <span class="k">new</span> <span class="kt">byte</span><span class="o">[</span><span class="n">bufferSize</span><span class="o">]</span><span class="p">;</span>
+<span class="w">    </span><span class="cm">/** Creating the byte array. */</span>
+<span class="w">    </span><span class="kt">byte</span><span class="o">[]</span><span class="w"> </span><span class="n">buffer</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="kt">byte</span><span class="o">[</span><span class="n">bufferSize</span><span class="o">]</span><span class="p">;</span>
 
-    <span class="cm">/** Using the get() method to put all of the elements of the region of interest</span>
+<span class="w">    </span><span class="cm">/** Using the get() method to put all of the elements of the region of interest</span>
 <span class="cm">     *  inside the byte array. */</span>
-    <span class="n">roiMat</span><span class="p">.</span><span class="na">get</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">buffer</span><span class="p">);</span>
+<span class="w">    </span><span class="n">roiMat</span><span class="p">.</span><span class="na">get</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="n">buffer</span><span class="p">);</span>
 </pre></div>
 </div>
 <div class="section" id="changing-the-pixels-of-the-roi">
@@ -217,10 +217,10 @@
 <p>In our application, we store the information about which button the user clicked with the <strong>buttonChosen</strong> <strong>String</strong> and use it as the key to a <strong>switch</strong> statement to determine what should be done. If the user wants to show it back the original image, we only need to assign our <strong>currentImage</strong> <strong>Mat</strong> object to the <strong>originalImage</strong> object that we made sure it wasn't going to be altered in any circumstance. In the other cases, we need to alter the pixels in our buffer and then put it back in the <strong>roiMat</strong> before showing it again on the screen.</p>
 <p>To alter the pixels, we can use one of the two helper methods: <strong>changePixelsColor()</strong> and <strong>changePixelsToNegative()</strong>. The first one will be used if we want to change the <strong>roiMat</strong> pixels to a single color (in this case, black or red). The second one will be used if we want the find the negative of the ROI.</p>
 <p>This piece of the puzzle can be seen here:</p>
-<div class="highlight"><pre><span></span>    <span class="cm">/** Creating a String variable to know which button was clicked. */</span>
-    <span class="n">String</span> <span class="n">buttonChosen</span> <span class="o">=</span> <span class="n">e</span><span class="p">.</span><span class="na">getActionCommand</span><span class="p">();</span>
+<div class="highlight"><pre><span></span><span class="w">    </span><span class="cm">/** Creating a String variable to know which button was clicked. */</span>
+<span class="w">    </span><span class="n">String</span><span class="w"> </span><span class="n">buttonChosen</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">e</span><span class="p">.</span><span class="na">getActionCommand</span><span class="p">();</span>
 
-    <span class="cm">/**</span>
+<span class="w">    </span><span class="cm">/**</span>
 <span class="cm">     *  Using a switch statement to control what should be done based</span>
 <span class="cm">     *  on which button the user clicked.</span>
 <span class="cm">     *  If the user chose the black pixels option, we must change the</span>
@@ -232,29 +232,29 @@
 <span class="cm">     *  If the user chose the restore option, we only need to get the original</span>
 <span class="cm">     *  pixels.</span>
 <span class="cm">     */</span>
-    <span class="k">switch</span> <span class="p">(</span><span class="n">buttonChosen</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">case</span> <span class="s">&quot;Black Pixels&quot;</span><span class="p">:</span>
-      <span class="n">changePixelsColor</span><span class="p">(</span><span class="n">buffer</span><span class="p">,</span> <span class="n">bufferSize</span><span class="p">,</span> <span class="k">new</span> <span class="kt">int</span><span class="o">[]</span> <span class="p">{</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">});</span>
-      <span class="k">break</span><span class="p">;</span>
-    <span class="k">case</span> <span class="s">&quot;Red Pixels&quot;</span><span class="p">:</span>
-      <span class="n">changePixelsColor</span><span class="p">(</span><span class="n">buffer</span><span class="p">,</span> <span class="n">bufferSize</span><span class="p">,</span> <span class="k">new</span> <span class="kt">int</span><span class="o">[]</span> <span class="p">{</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">255</span><span class="p">});</span>
-      <span class="k">break</span><span class="p">;</span>
-    <span class="k">case</span> <span class="s">&quot;Negative Pixels&quot;</span><span class="p">:</span>
-      <span class="n">changePixelsToNegative</span><span class="p">(</span><span class="n">buffer</span><span class="p">,</span> <span class="n">bufferSize</span><span class="p">);</span>
-      <span class="k">break</span><span class="p">;</span>
-    <span class="k">case</span> <span class="s">&quot;Restore Original Image&quot;</span><span class="p">:</span>
-      <span class="n">currentImage</span> <span class="o">=</span> <span class="n">originalImage</span><span class="p">;</span>
-    <span class="k">default</span><span class="p">:</span>
-      <span class="k">break</span><span class="p">;</span>
-    <span class="p">}</span>
+<span class="w">    </span><span class="k">switch</span><span class="w"> </span><span class="p">(</span><span class="n">buttonChosen</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="s">&quot;Black Pixels&quot;</span><span class="p">:</span>
+<span class="w">      </span><span class="n">changePixelsColor</span><span class="p">(</span><span class="n">buffer</span><span class="p">,</span><span class="w"> </span><span class="n">bufferSize</span><span class="p">,</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="kt">int</span><span class="o">[]</span><span class="w"> </span><span class="p">{</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">});</span>
+<span class="w">      </span><span class="k">break</span><span class="p">;</span>
+<span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="s">&quot;Red Pixels&quot;</span><span class="p">:</span>
+<span class="w">      </span><span class="n">changePixelsColor</span><span class="p">(</span><span class="n">buffer</span><span class="p">,</span><span class="w"> </span><span class="n">bufferSize</span><span class="p">,</span><span class="w"> </span><span class="k">new</span><span class="w"> </span><span class="kt">int</span><span class="o">[]</span><span class="w"> </span><span class="p">{</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">255</span><span class="p">});</span>
+<span class="w">      </span><span class="k">break</span><span class="p">;</span>
+<span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="s">&quot;Negative Pixels&quot;</span><span class="p">:</span>
+<span class="w">      </span><span class="n">changePixelsToNegative</span><span class="p">(</span><span class="n">buffer</span><span class="p">,</span><span class="w"> </span><span class="n">bufferSize</span><span class="p">);</span>
+<span class="w">      </span><span class="k">break</span><span class="p">;</span>
+<span class="w">    </span><span class="k">case</span><span class="w"> </span><span class="s">&quot;Restore Original Image&quot;</span><span class="p">:</span>
+<span class="w">      </span><span class="n">currentImage</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">originalImage</span><span class="p">;</span>
+<span class="w">    </span><span class="k">default</span><span class="p">:</span>
+<span class="w">      </span><span class="k">break</span><span class="p">;</span>
+<span class="w">    </span><span class="p">}</span>
 
-    <span class="cm">/**</span>
+<span class="w">    </span><span class="cm">/**</span>
 <span class="cm">     * Putting the newly calculated pixels values on the region of</span>
 <span class="cm">     * interest with the put() method.</span>
 <span class="cm">     */</span>
-    <span class="n">roiMat</span><span class="p">.</span><span class="na">put</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="n">buffer</span><span class="p">);</span>
+<span class="w">    </span><span class="n">roiMat</span><span class="p">.</span><span class="na">put</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="n">buffer</span><span class="p">);</span>
 
-    <span class="cm">/**</span>
+<span class="w">    </span><span class="cm">/**</span>
 <span class="cm">     * Calling the showImage() method the display the new image on</span>
 <span class="cm">     * the screen.</span>
 <span class="cm">     */</span>
@@ -274,7 +274,7 @@
 <p>Wow, that's a lot of colors.</p>
 <p>Don't worry! This value is the distance between the color value and <strong>255</strong>. In this case, we need to get the current value in the <strong>buffer</strong>, find the distance to <strong>255</strong> and replace the value in the <strong>buffer</strong>.</p>
 <p>Here's the code:</p>
-<div class="highlight"><pre><span></span>  <span class="cm">/**</span>
+<div class="highlight"><pre><span></span><span class="w">  </span><span class="cm">/**</span>
 <span class="cm">   * Helper method to calculate the negative complement of each value in each</span>
 <span class="cm">   * channel on every pixel in the region of interest. Since Java does not have</span>
 <span class="cm">   * any unsigned byte data type, we must cast the value to an int using the AND</span>
@@ -283,17 +283,17 @@
 <span class="cm">   * @param buffer - byte array with the values of the pixels from an image.</span>
 <span class="cm">   * @param bufferSize - size of the byte array.</span>
 <span class="cm">   */</span>
-  <span class="kd">private</span> <span class="kt">void</span> <span class="nf">changePixelsToNegative</span><span class="p">(</span><span class="kt">byte</span><span class="o">[]</span> <span class="n">buffer</span><span class="p">,</span> <span class="kt">int</span> <span class="n">bufferSize</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">bufferSize</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-      <span class="k">if</span> <span class="p">(</span><span class="n">i</span> <span class="o">%</span> <span class="mi">3</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">buffer</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">=</span> <span class="p">(</span><span class="kt">byte</span><span class="p">)</span> <span class="p">(</span><span class="n">Math</span><span class="p">.</span><span class="na">abs</span><span class="p">((</span><span class="n">buffer</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">&amp;</span> <span class="mh">0xff</span><span class="p">)</span> <span class="o">-</span> <span class="mi">255</span><span class="p">));</span>
-        <span class="n">buffer</span><span class="o">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="o">]</span> <span class="o">=</span> <span class="p">(</span><span class="kt">byte</span><span class="p">)</span> <span class="p">(</span><span class="n">Math</span><span class="p">.</span><span class="na">abs</span><span class="p">((</span><span class="n">buffer</span><span class="o">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="o">]</span> <span class="o">&amp;</span> <span class="mh">0xff</span><span class="p">)</span> <span class="o">-</span> <span class="mi">255</span><span class="p">));</span>
-        <span class="n">buffer</span><span class="o">[</span><span class="n">i</span><span class="o">+</span><span class="mi">2</span><span class="o">]</span> <span class="o">=</span> <span class="p">(</span><span class="kt">byte</span><span class="p">)</span> <span class="p">(</span><span class="n">Math</span><span class="p">.</span><span class="na">abs</span><span class="p">((</span><span class="n">buffer</span><span class="o">[</span><span class="n">i</span><span class="o">+</span><span class="mi">2</span><span class="o">]</span> <span class="o">&amp;</span> <span class="mh">0xff</span><span class="p">)</span> <span class="o">-</span> <span class="mi">255</span><span class="p">));</span>
-      <span class="p">}</span>
-    <span class="p">}</span>
-  <span class="p">}</span>
+<span class="w">  </span><span class="kd">private</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">changePixelsToNegative</span><span class="p">(</span><span class="kt">byte</span><span class="o">[]</span><span class="w"> </span><span class="n">buffer</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">bufferSize</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">bufferSize</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="mi">3</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">buffer</span><span class="o">[</span><span class="n">i</span><span class="o">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="kt">byte</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="n">Math</span><span class="p">.</span><span class="na">abs</span><span class="p">((</span><span class="n">buffer</span><span class="o">[</span><span class="n">i</span><span class="o">]</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="mh">0xff</span><span class="p">)</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">255</span><span class="p">));</span>
+<span class="w">        </span><span class="n">buffer</span><span class="o">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="o">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="kt">byte</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="n">Math</span><span class="p">.</span><span class="na">abs</span><span class="p">((</span><span class="n">buffer</span><span class="o">[</span><span class="n">i</span><span class="o">+</span><span class="mi">1</span><span class="o">]</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="mh">0xff</span><span class="p">)</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">255</span><span class="p">));</span>
+<span class="w">        </span><span class="n">buffer</span><span class="o">[</span><span class="n">i</span><span class="o">+</span><span class="mi">2</span><span class="o">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="kt">byte</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="n">Math</span><span class="p">.</span><span class="na">abs</span><span class="p">((</span><span class="n">buffer</span><span class="o">[</span><span class="n">i</span><span class="o">+</span><span class="mi">2</span><span class="o">]</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="mh">0xff</span><span class="p">)</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">255</span><span class="p">));</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">}</span>
 
-  <span class="cm">/**</span>
+<span class="w">  </span><span class="cm">/**</span>
 <span class="cm">   * Helper method to change the pixel value of each value in each channel on every</span>
 <span class="cm">   * pixel in the region of interest. Here, we must pass an array of lenght three with</span>
 <span class="cm">   * the new pixel value. Since Java does not have any unsigned byte data type, we must pass</span>
@@ -306,15 +306,15 @@
 <span class="cm">   * channel, the one in the second position represent the green channel and the third position</span>
 <span class="cm">   * represents the red color.</span>
 <span class="cm">   */</span>
-  <span class="kd">private</span> <span class="kt">void</span> <span class="nf">changePixelsColor</span><span class="p">(</span><span class="kt">byte</span><span class="o">[]</span> <span class="n">buffer</span><span class="p">,</span> <span class="kt">int</span> <span class="n">bufferSize</span><span class="p">,</span> <span class="kt">int</span><span class="o">[]</span> <span class="n">newPixelValue</span><span class="p">)</span> <span class="p">{</span>
-    <span class="k">for</span> <span class="p">(</span><span class="kt">int</span> <span class="n">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="n">i</span> <span class="o">&lt;</span> <span class="n">bufferSize</span><span class="p">;</span> <span class="n">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
-      <span class="k">if</span> <span class="p">(</span><span class="n">i</span> <span class="o">%</span> <span class="mi">3</span> <span class="o">==</span> <span class="mi">0</span><span class="p">)</span> <span class="p">{</span>
-        <span class="n">buffer</span><span class="o">[</span><span class="n">i</span><span class="o">]</span> <span class="o">=</span> <span class="p">(</span><span class="kt">byte</span><span class="p">)</span> <span class="p">(</span><span class="n">newPixelValue</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span> <span class="o">&amp;</span> <span class="mh">0xff</span><span class="p">);</span>
-        <span class="n">buffer</span><span class="o">[</span><span class="n">i</span> <span class="o">+</span> <span class="mi">1</span><span class="o">]</span> <span class="o">=</span> <span class="p">(</span><span class="kt">byte</span><span class="p">)</span> <span class="p">(</span><span class="n">newPixelValue</span><span class="o">[</span><span class="mi">1</span><span class="o">]</span> <span class="o">&amp;</span> <span class="mh">0xff</span><span class="p">);</span>
-        <span class="n">buffer</span><span class="o">[</span><span class="n">i</span> <span class="o">+</span> <span class="mi">2</span><span class="o">]</span> <span class="o">=</span> <span class="p">(</span><span class="kt">byte</span><span class="p">)</span> <span class="p">(</span><span class="n">newPixelValue</span><span class="o">[</span><span class="mi">2</span><span class="o">]</span> <span class="o">&amp;</span> <span class="mh">0xff</span><span class="p">);</span>
-      <span class="p">}</span>
-    <span class="p">}</span>
-  <span class="p">}</span>
+<span class="w">  </span><span class="kd">private</span><span class="w"> </span><span class="kt">void</span><span class="w"> </span><span class="nf">changePixelsColor</span><span class="p">(</span><span class="kt">byte</span><span class="o">[]</span><span class="w"> </span><span class="n">buffer</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">bufferSize</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="o">[]</span><span class="w"> </span><span class="n">newPixelValue</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">for</span><span class="w"> </span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">bufferSize</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">      </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="o">%</span><span class="w"> </span><span class="mi">3</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">0</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">        </span><span class="n">buffer</span><span class="o">[</span><span class="n">i</span><span class="o">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="kt">byte</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="n">newPixelValue</span><span class="o">[</span><span class="mi">0</span><span class="o">]</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="mh">0xff</span><span class="p">);</span>
+<span class="w">        </span><span class="n">buffer</span><span class="o">[</span><span class="n">i</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span><span class="o">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="kt">byte</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="n">newPixelValue</span><span class="o">[</span><span class="mi">1</span><span class="o">]</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="mh">0xff</span><span class="p">);</span>
+<span class="w">        </span><span class="n">buffer</span><span class="o">[</span><span class="n">i</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">2</span><span class="o">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">(</span><span class="kt">byte</span><span class="p">)</span><span class="w"> </span><span class="p">(</span><span class="n">newPixelValue</span><span class="o">[</span><span class="mi">2</span><span class="o">]</span><span class="w"> </span><span class="o">&amp;</span><span class="w"> </span><span class="mh">0xff</span><span class="p">);</span>
+<span class="w">      </span><span class="p">}</span>
+<span class="w">    </span><span class="p">}</span>
+<span class="w">  </span><span class="p">}</span>
 </pre></div>
 <p>And I guess that's it! I hope that you've enjoyed today's post. Before I go, let's just see what color is <strong>new int[] {31, 200, 109}</strong>:</p>
 <img alt="Picture of andre's face with a rectangle kind of green in front. This green is the random color from the text." class="align-center" src="images/04-02-PlayingWithPixelsRandom.png" />
