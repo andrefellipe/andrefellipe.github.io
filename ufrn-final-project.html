@@ -1,0 +1,201 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="HandheldFriendly" content="True" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="index, follow" />
+
+  <link href="https://fonts.googleapis.com/css?family=Source+Code+Pro|Source+Sans+Pro:300,400,400i,700" rel="stylesheet">
+
+    <link rel="stylesheet/less" type="text/css" href="./theme/stylesheet/style.less">
+    <script src="//cdnjs.cloudflare.com/ajax/libs/less.js/2.5.1/less.min.js" type="text/javascript"></script>
+
+  <link rel="stylesheet" type="text/css" href="./theme/pygments/native.min.css">
+  <link rel="stylesheet" type="text/css" href="./theme/font-awesome/css/font-awesome.min.css">
+
+
+    <link href="https://andrefellipe.com/feeds/all.atom.xml" type="application/atom+xml" rel="alternate" title="Andre Fellipe Atom">
+
+
+
+
+    <!-- Chrome, Firefox OS and Opera -->
+    <meta name="theme-color" content="#333333">
+    <!-- Windows Phone -->
+    <meta name="msapplication-navbutton-color" content="#333333">
+    <!-- iOS Safari -->
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <!-- Microsoft EDGE -->
+    <meta name="msapplication-TileColor" content="#333333">
+
+<meta name="author" content="Andre Fellipe da Silva" />
+<meta name="description" content="I&#39;ve presented my final project at the university last week. This post was written to the sound of The Doors&#39; eponymous album. You can listen one of the songs here." />
+<meta name="keywords" content="matlab, python, ufrn">
+
+<meta property="og:site_name" content="Andre Fellipe"/>
+<meta property="og:title" content="This is the end, beautiful friend"/>
+<meta property="og:description" content="I&#39;ve presented my final project at the university last week. This post was written to the sound of The Doors&#39; eponymous album. You can listen one of the songs here."/>
+<meta property="og:locale" content="en_US.utf8"/>
+<meta property="og:url" content="./ufrn-final-project.html"/>
+<meta property="og:type" content="article"/>
+<meta property="article:published_time" content="2019-12-01 15:30:00-03:00"/>
+<meta property="article:modified_time" content="2019-12-01 15:30:00-03:00"/>
+<meta property="article:author" content="./author/andre-fellipe-da-silva.html">
+<meta property="article:section" content="portfolio"/>
+<meta property="article:tag" content="matlab"/>
+<meta property="article:tag" content="python"/>
+<meta property="article:tag" content="ufrn"/>
+<meta property="og:image" content="https://andrefellipe.com/images/badge.jpeg">
+
+  <title>Andre Fellipe &ndash; This is the end, beautiful friend</title>
+
+</head>
+<body>
+  <aside>
+    <div>
+      <a href=".">
+        <img src="https://andrefellipe.com/images/badge.jpeg" alt="Andre Fellipe" title="Andre Fellipe">
+      </a>
+      <h1><a href=".">Andre Fellipe</a></h1>
+
+<p>made on the internet</p>
+      <nav>
+        <ul class="list">
+          <li><a href="./pages/about.html">About</a></li>
+          <li><a href="./pages/contact.html">Contact</a></li>
+
+        </ul>
+      </nav>
+
+      <ul class="social">
+        <li><a class="sc-linkedin" href="https://www.linkedin.com/in/andrefellipe/" target="_blank"><i class="fa fa-linkedin"></i></a></li>
+        <li><a class="sc-github" href="https://github.com/andrefellipe/" target="_blank"><i class="fa fa-github"></i></a></li>
+        <li><a class="sc-envelope-o" href="mailto:andrefellipern@gmail.com" target="_blank"><i class="fa fa-envelope-o"></i></a></li>
+      </ul>
+    </div>
+
+
+  </aside>
+  <main>
+
+    <nav>
+      <a href=".">    Home
+</a>
+
+      <a href="/archives.html">Archives</a>
+      <a href="/categories.html">Categories</a>
+
+      <a href="https://andrefellipe.com/feeds/all.atom.xml">    Atom
+</a>
+
+    </nav>
+
+<article class="single">
+  <header>
+      
+    <h1 id="ufrn-final-project">This is the end, beautiful friend</h1>
+    <p>
+          Posted on Dec 01, 2019 in <a href="./category/portfolio.html">portfolio</a>
+
+
+    </p>
+  </header>
+
+
+  <div>
+    <p>So, I'm only a few days away from officially becoming an electrical engineer. The final step was taken last thursday. I did my presentation and the professors loved it. One of the them even invited me to do my master's degree with him.</p>
+<p>Here's the official photo:</p>
+<img alt="Professor Max Chianca, myself and professor Marcos Dias." class="align-center" src="images/08-01-Final-Project-Presentation.jpeg" />
+<p>If you didn't realized yet from older posts, I'm always the tall one.</p>
+<p>My final project was a very easy one. Last july, during my Electrical Substations class, the professor suggested that developing a program to design grounding grids for substations alongside a tool for soil stratification would be a good idea for a final project. I thought to myself &quot;Hey, I can do this very quickly&quot; and I did it in two weeks.</p>
+<p>Originally, I did it on MATLAB. In the beginning of september I think, I decided to develop an API using Django and put it up on Heroku. Then, I created a small form to consume the API and used Heroku again to leave it online.</p>
+<p>The MATLAB and Python code can be found on <a class="reference external" href="https://github.com/andrefellipe/esd">GitHub</a> and the live website is on this weird <a class="reference external" href="https://grounding-design.herokuapp.com/index.html">link</a>.</p>
+<p>The math behind everything is not very difficult and I'm not going to dwell on it much. Basically, we have to minimize this function to do the soil stratification with two layers:</p>
+<img alt="Least squares equation for two-layer soil stratification." class="align-center" src="images/08-02-Equation.png" />
+<p>Also, there's a block diagram on the standard IEEE 80-2000 that I followed to check if the grounding grid has adequate touch and step voltages:</p>
+<img alt="Design procedure block diagram." class="align-center" src="images/08-03-Design-Procedure-Block-Diagram.png" />
+<p>Even though this is not a difficult project, I liked because it was something that was done very quickly. I loved because I did it very early and had the time to focus on more important things for my career.</p>
+<p>If you need a simple tool to do soil stratification and check if your rectangular grounding grid is safe, you're good to go.</p>
+<p>This is it.</p>
+<p>The end.</p>
+<p>I'm a electrical engineer now.</p>
+<p>Let's see what the future holds.</p>
+
+  </div>
+  <div class="tag-cloud">
+    <p>
+      <a href="./tag/matlab.html">matlab</a>
+      <a href="./tag/python.html">python</a>
+      <a href="./tag/ufrn.html">ufrn</a>
+    </p>
+  </div>
+
+  <div class="center social-share">
+    <p>    Like this article? Share it with your friends!
+</p>
+    <div class="addthis_native_toolbox"></div>
+    <div class="addthis_sharing_toolbox"></div>
+    <div class="addthis_inline_share_toolbox"></div>
+  </div>
+
+
+    <div class="addthis_relatedposts_inline"></div>
+
+
+<!-- Disqus -->
+<div id="disqus_thread"></div>
+<script type="text/javascript">
+    var disqus_shortname = 'andrefellipe';
+    (function() {
+        var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+        dsq.src = '//' + disqus_shortname + '.disqus.com/embed.js';
+        (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    })();
+</script>
+<noscript>
+        Please enable JavaScript to view comments.
+
+</noscript>
+<!-- End Disqus -->
+</article>
+
+    <footer>
+<p>
+  &copy;  2018 - This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-sa/4.0/">Creative Commons Attribution-ShareAlike 4.0 International License</a>
+</p>
+<p>    Powered by <a href="http://getpelican.com" target="_blank">Pelican</a> - <a href="https://github.com/alexandrevicenzi/flex" target="_blank">Flex</a> theme by <a href="http://alexandrevicenzi.com" target="_blank">Alexandre Vicenzi</a>
+</p><p>
+  <a rel="license"
+     href="http://creativecommons.org/licenses/by-sa/4.0/"
+     target="_blank">
+    <img alt="Creative Commons License"
+         title="Creative Commons License"
+         style="border-width:0"
+           src="https://i.creativecommons.org/l/by-sa/4.0/80x15.png"
+         width="80"
+         height="15"/>
+  </a>
+</p>    </footer>
+  </main>
+
+
+    <script type="text/javascript" src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5ba05ddbeb328e87" async="async"></script>
+
+
+<script type="application/ld+json">
+{
+  "@context" : "http://schema.org",
+  "@type" : "Blog",
+  "name": " Andre Fellipe ",
+  "url" : ".",
+  "image": "https://andrefellipe.com/images/badge.jpeg",
+  "description": "Andre's personal site"
+}
+</script>
+
+</body>
+</html>
