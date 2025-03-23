@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom"><title>A Pelican Blog - digital image processing</title><link href="/" rel="alternate"></link><link href="/feeds/digital-image-processing.atom.xml" rel="self"></link><id>/</id><updated>2018-10-03T23:40:00+00:00</updated><entry><title>Hello, OpenCV and Java</title><link href="/opencv-java.html" rel="alternate"></link><published>2018-08-29T16:50:00+00:00</published><updated>2018-10-03T23:40:00+00:00</updated><author><name>Andre Fellipe da Silva</name></author><id>tag:None,2018-08-29:/opencv-java.html</id><summary type="html">&lt;p class="first last"&gt;A tutorial to use OpenCV with Java. This post was written to the sound of Hall &amp;amp; Oates' &lt;a class="reference external" href="https://en.wikipedia.org/wiki/Big_Bam_Boom"&gt;Big Bam Boom&lt;/a&gt;. You can listen one of the songs &lt;a class="reference external" href="https://www.youtube.com/watch?v=s_8KR-n2fBQ"&gt;here&lt;/a&gt;.&lt;/p&gt;
+</summary><content type="html">&lt;p&gt;This tutorial will not teach you how to compile your own OpenCV using the source code. I recommend that you try this at a future date for learning purposes. At this moment, let's try a different approach. I am using Ubuntu 18.04 and this tutorial will only work for distributions of the Linux operating system. You will see why below.&lt;/p&gt;
+&lt;p&gt;Also, I expect that you have a general knowledge about Java. If you know nothing about it so far, just follow the instructions.&lt;/p&gt;
+&lt;p&gt;Let's dive in!&lt;/p&gt;
+&lt;div class="section" id="checking-if-you-have-java"&gt;
+&lt;h2&gt;Checking if you have Java&lt;/h2&gt;
+&lt;p&gt;Open the terminal (ctrl + alt + T).&lt;/p&gt;
+&lt;p&gt;Run the following command to check if you already have Java:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="gp"&gt;$ &lt;/span&gt;java -version
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;You are good to go if you see something like this:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="go"&gt;java version &amp;quot;1.8.0_181&amp;quot;&lt;/span&gt;
+&lt;span class="go"&gt;Java(TM) SE Runtime Environment (build 1.8.0_181-b13)&lt;/span&gt;
+&lt;span class="go"&gt;Java HotSpot(TM) 64-Bit Server VM (build 25.181-b13, mixed mode)&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;You may have another version of Oracle's Java or OpenJDK, but this should not be a problem.&lt;/p&gt;
+&lt;p&gt;If you do not see the message above or something similar, you will need to install Java. If you can see the message, jump to the next section.&lt;/p&gt;
+&lt;p&gt;Run the following commands to install Oracle's Java 8:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="gp"&gt;$ &lt;/span&gt;sudo add-apt-repository ppa:webupd8team/java
+&lt;span class="gp"&gt;$ &lt;/span&gt;sudo apt-get update
+&lt;span class="gp"&gt;$ &lt;/span&gt;sudo apt-get install oracle-java8-installer
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Run the &lt;strong&gt;java -version&lt;/strong&gt; command again to make sure everything is fine.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="download-opencv"&gt;
+&lt;h2&gt;Download OpenCV&lt;/h2&gt;
+&lt;p&gt;Run the following command to install the OpenCV library:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="gp"&gt;$ &lt;/span&gt;sudo apt-get install libopencv-dev
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;That's it.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="creating-our-first-program"&gt;
+&lt;h2&gt;Creating Our First Program&lt;/h2&gt;
+&lt;p&gt;Using your favorite text editor, create a file named &lt;strong&gt;HelloOpenCVJava.java&lt;/strong&gt;. I am using &lt;a class="reference external" href="https://en.wikipedia.org/wiki/Vim_(text_editor)"&gt;Vim&lt;/a&gt;, so the command would be:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="gp"&gt;$ &lt;/span&gt;vim HelloOpenCVJava.java
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Now, copy and paste the following code:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="kn"&gt;import&lt;/span&gt; &lt;span class="nn"&gt;org.opencv.core.Core&lt;/span&gt;&lt;span class="p"&gt;;&lt;/span&gt;
+
+&lt;span class="kd"&gt;public&lt;/span&gt; &lt;span class="kd"&gt;class&lt;/span&gt; &lt;span class="nc"&gt;HelloOpenCVJava&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+
+  &lt;span class="cm"&gt;/** Loading the OpenCV library. */&lt;/span&gt;
+  &lt;span class="kd"&gt;static&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+    &lt;span class="n"&gt;System&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;loadLibrary&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;Core&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;NATIVE_LIBRARY_NAME&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+  &lt;span class="p"&gt;}&lt;/span&gt;
+
+  &lt;span class="kd"&gt;public&lt;/span&gt; &lt;span class="kd"&gt;static&lt;/span&gt; &lt;span class="kt"&gt;void&lt;/span&gt; &lt;span class="nf"&gt;main&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="n"&gt;String&lt;/span&gt;&lt;span class="o"&gt;[]&lt;/span&gt; &lt;span class="n"&gt;args&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="p"&gt;{&lt;/span&gt;
+
+    &lt;span class="cm"&gt;/** Printing the OpenCV version. */&lt;/span&gt;
+    &lt;span class="n"&gt;System&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;out&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;println&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;Hello OpenCV &amp;quot;&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;Core&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;VERSION&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;!&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+
+    &lt;span class="cm"&gt;/** Printing the Java version. */&lt;/span&gt;
+    &lt;span class="n"&gt;System&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;out&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;println&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;Hello to you too, Java &amp;quot;&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="n"&gt;System&lt;/span&gt;&lt;span class="p"&gt;.&lt;/span&gt;&lt;span class="na"&gt;getProperty&lt;/span&gt;&lt;span class="p"&gt;(&lt;/span&gt;&lt;span class="s"&gt;&amp;quot;java.version&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;)&lt;/span&gt; &lt;span class="o"&gt;+&lt;/span&gt; &lt;span class="s"&gt;&amp;quot;!&amp;quot;&lt;/span&gt;&lt;span class="p"&gt;);&lt;/span&gt;
+  &lt;span class="p"&gt;}&lt;/span&gt;
+
+&lt;span class="p"&gt;}&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Let's breakdown the &lt;strong&gt;HelloOpenCVJava&lt;/strong&gt; application.&lt;/p&gt;
+&lt;p&gt;The &lt;strong&gt;import&lt;/strong&gt; keyword is necessary to load the &lt;strong&gt;Core&lt;/strong&gt; class from the OpenCV library.&lt;/p&gt;
+&lt;p&gt;We use the &lt;strong&gt;NATIVE_LIBRARY_NAME&lt;/strong&gt; property of the Core class to find the corresponding name of the library and use as parameter to the &lt;strong&gt;loadLibrary&lt;/strong&gt; method. In this case, it returns &lt;strong&gt;opencv_java320&lt;/strong&gt;. This will allow us to use the OpenCV library. After that, we print the versions of the library and Java.&lt;/p&gt;
+&lt;/div&gt;
+&lt;div class="section" id="compiling-and-running-helloopencvjava"&gt;
+&lt;h2&gt;Compiling and Running HelloOpenCVJava&lt;/h2&gt;
+&lt;p&gt;Your project directory must be looking like this right now:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="go"&gt;.&lt;/span&gt;
+&lt;span class="go"&gt;|__ HelloOpenCVJava.java&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;If it is, run the following command to compile HelloOpenCVJava.java:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="gp"&gt;$ &lt;/span&gt;javac -cp /usr/share/OpenCV/java/opencv-320.jar HelloOpenCVJava.java
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;Now you should have your bytecode class file &lt;strong&gt;HelloOpenCVJava.class&lt;/strong&gt;. Here's how the directory should look like:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="go"&gt;.&lt;/span&gt;
+&lt;span class="go"&gt;|__ HelloOpenCVJava.class&lt;/span&gt;
+&lt;span class="go"&gt;|__ HelloOpenCVJava.java&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The &lt;a class="reference external" href="https://docs.oracle.com/javase/8/docs/technotes/tools/windows/findingclasses.html#BABBFCIJ"&gt;-cp flag&lt;/a&gt; tells the compiler to set the system property java.class.path, which is a list of directories, JAR files and ZIP files that contain class files. We are using here to indicate that we want to find our &lt;strong&gt;opencv-320.jar&lt;/strong&gt;.&lt;/p&gt;
+&lt;p&gt;We have everything we need to run our application now. We do this with the following command:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="gp"&gt;$ &lt;/span&gt;java -Djava.library.path&lt;span class="o"&gt;=&lt;/span&gt;/usr/lib/jni -cp /usr/share/OpenCV/java/opencv-320.jar:. HelloOpenCVJava
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;&lt;strong&gt;-Djava.library.path&lt;/strong&gt; sets the &lt;strong&gt;java.library.path&lt;/strong&gt; property (-D is a flag to set a system property) to inform the JVM where it can locate native libraries. This property is part of the system environment used by Java, in order to find and load native libraries used by an application.&lt;/p&gt;
+&lt;p&gt;This should be your output:&lt;/p&gt;
+&lt;div class="highlight"&gt;&lt;pre&gt;&lt;span&gt;&lt;/span&gt;&lt;span class="go"&gt;Hello OpenCV 3.2.0!&lt;/span&gt;
+&lt;span class="go"&gt;Hello to you too, Java 1.8.0_181!&lt;/span&gt;
+&lt;/pre&gt;&lt;/div&gt;
+&lt;p&gt;The second line may change depending on your version of Java.&lt;/p&gt;
+&lt;p&gt;We did it! Well, I did it. I hope that you can replicate this in your machine.&lt;/p&gt;
+&lt;p&gt;To finish, I would like to point out that in the &lt;a class="reference external" href="https://opencv-java-tutorials.readthedocs.io/en/latest/01-installing-opencv-for-java.html#set-up-opencv-for-java-in-eclipse"&gt;OpenCV Java Tutorials Documentation&lt;/a&gt; there's a pretty neat tutorial on how to use OpenCV in an IDE like &lt;a class="reference external" href="https://www.eclipse.org/"&gt;Eclipse&lt;/a&gt;, if you prefer to work in such fashion.&lt;/p&gt;
+&lt;p&gt;In the next chapter of this journey, we will play a little with Mat objects and some images. Stay tuned!&lt;/p&gt;
+&lt;/div&gt;
+</content><category term="digital image processing"></category><category term="java"></category><category term="opencv"></category><category term="dip"></category></entry></feed>
