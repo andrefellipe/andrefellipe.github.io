@@ -45,6 +45,21 @@ Family is a fundamental aspect of any iteration of the Spider-Man story and the 
 
 *Make a Wish* is a brilliant episode. It combines three of the best stories from Spider-Man into one and delivers the content in unforgettable fashion. We see Peter Parker giving up on being Spider-Man ("Spider-Man No More!"), Madame Web making her presence known and showing how important of a character it will be, the hero's origin story and a recollection of the classic `The Kid Who Collects Spider-Man`_. This combination shows a powerful story where we are reminded that Peter Parker has personal misfortunes amid his heroism. It just shows that his struggles will never be over as long as he embraces his responsibilities. The only negative here for me are the dream sequences in the origin story. I was never a fan of the dream sequences and Peter showing up as an actual spider is more gross than entertaining. But even with that, this episode still ranks highly on my list of favorite episodes of the series. The story, the chemistry with Taina, Madame Web confronting Peter, Doctor Octopus gaining the upperhand and outsmarting the hero... Everything positive meshes so well that brings the episode into a different bracket of great episodes.
 
+**Attack of the Octobot**
+*************************
+
+.. image:: images/14-03-S03E03-taina.png
+  :alt: Shot from the third episode of the third season of the Spider-Man 1994 television series.
+  :align: center
+
+.. class:: center
+
+*"I do know who I am now. And I'll be ready. And it's all because of the faith of a little girl that's more of a superhero than I'll ever be." - Spider-Man*
+
+**Written by**: Meg McLaughlin and John Semper.
+
+Spider-Man loses his memory and begins an uneasy alliance with Dr. Octopus before Taina saves him. While a weird story, the emotional punches that shown in the relationship between Spider-Man and Taina makes this a sweet conclusion to the arc. The episode relies on Spider-Man being confused about his identity, both because of amnesia as well as because of his previous disappointments, which led the protagonist to abandon his superhero persona. This is a deep arc that resonates with Madame Web's talks about a bigger challenge coming for our hero and those moments are the heart of the episode. My least favorite aspect are the robberies with Dr. Octopus, but it is understandable why they are needed. Our glimpses on the cab drivers community helping our hero are a delight, though, showing how much of an impact Peter Parker has on the city. This episode is a nice collection of sweet moments, ending with a darker tone that only amplifies the meaning of all that we just witnessed.
+
 .. _`Fruto Proibido`: https://en.wikipedia.org/wiki/Fruto_Proibido
 .. _here: https://www.youtube.com/watch?v=JJhKbpjfXnQ
 .. _`The Kid Who Collects Spider-Man`: https://en.wikipedia.org/wiki/The_Kid_Who_Collects_Spider-Man
