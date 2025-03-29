@@ -60,6 +60,23 @@ Family is a fundamental aspect of any iteration of the Spider-Man story and the 
 
 Spider-Man loses his memory and begins an uneasy alliance with Dr. Octopus before Taina saves him. While a weird story, the emotional punches that shown in the relationship between Spider-Man and Taina makes this a sweet conclusion to the arc. The episode relies on Spider-Man being confused about his identity, both because of amnesia as well as because of his previous disappointments, which led the protagonist to abandon his superhero persona. This is a deep arc that resonates with Madame Web's talks about a bigger challenge coming for our hero and those moments are the heart of the episode. My least favorite aspect are the robberies with Dr. Octopus, but it is understandable why they are needed. Our glimpses on the cab drivers community helping our hero are a delight, though, showing how much of an impact Peter Parker has on the city. This episode is a nice collection of sweet moments, ending with a darker tone that only amplifies the meaning of all that we just witnessed.
 
+**Enter the Green Goblin**
+**************************
+
+.. image:: images/14-04-S03E04-goblin.png
+  :alt: Shot from the fourth episode of the third season of the Spider-Man 1994 television series.
+  :align: center
+
+.. class:: center
+
+*"Alright, Hobgo... You are not the Hobgoblin!" - Spider-Man*
+
+**Story by**: John Semper.
+
+**Teleplay by**: Marty Isenberg and Robert N. Skir.
+
+The third season of **Spider-Man: TAS** has every episode with the prefix The Sins of the Fathers. In the Season Premiere, it was Mary Jane that had to deal with the trauma that her father caused in her life. Here, we take a closer look at Harry, which brings us the debut of the Green Goblin. It is an interesting choice to have one of the main antagonists debut almost as an one-off, but this takes nothing from the episode. The Green Goblin establishes himself as a menace out of the gate kidnapping Oscorp's Board of Directors and Mary Jane. The insanity of the character is well displayed and the action sequences with Spider-Man are well crafted. It is interesting that everything is presented as the result of an accident and Norman Osborn returns to normal at the end of the episode. The Green Goblin has much more importance in future episodes and his introduction is just a small bit of much more evil things that will come from the character.
+
 .. _`Fruto Proibido`: https://en.wikipedia.org/wiki/Fruto_Proibido
 .. _here: https://www.youtube.com/watch?v=JJhKbpjfXnQ
 .. _`The Kid Who Collects Spider-Man`: https://en.wikipedia.org/wiki/The_Kid_Who_Collects_Spider-Man
