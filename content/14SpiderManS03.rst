@@ -77,6 +77,23 @@ Spider-Man loses his memory and begins an uneasy alliance with Dr. Octopus befor
 
 The third season of **Spider-Man: TAS** has every episode with the prefix The Sins of the Fathers. In the Season Premiere, it was Mary Jane that had to deal with the trauma that her father caused in her life. Here, we take a closer look at Harry, which brings us the debut of the Green Goblin. It is an interesting choice to have one of the main antagonists debut almost as an one-off, but this takes nothing from the episode. The Green Goblin establishes himself as a menace out of the gate kidnapping Oscorp's Board of Directors and Mary Jane. The insanity of the character is well displayed and the action sequences with Spider-Man are well crafted. It is interesting that everything is presented as the result of an accident and Norman Osborn returns to normal at the end of the episode. The Green Goblin has much more importance in future episodes and his introduction is just a small bit of much more evil things that will come from the character.
 
+**Rocket Racer**
+****************
+
+.. image:: images/14-05-S03E05-rocket.png
+  :alt: Shot from the fifth episode of the third season of the Spider-Man 1994 television series.
+  :align: center
+
+.. class:: center
+
+*"Yes, ladies and gentlemen, it's Robert "The Rocket" Farrell slashin' up the sidewalk! Will the curb be a problem? No way! He too stoped to be stopped! Radical aerial! The crowd goes wild! He swings the stairs like a pro! And then for the grand finale..." - Robert Farrell*
+
+**Story by**: John Semper.
+
+**Teleplay by**: Doug Booth and Mark Hoffmeier.
+
+You are not your thoughts. Whenever a thought comes to your head, good or bad, you have the power to act or not upon it. Robert Farrell struggles with bad thoughts throughout this episode. If his past already condemns him as a criminal, why should he try to be a better person? Farrell almost gives in to the dark side on multiple occasions, but decides against it at the last minute. His caring love for his mother makes him to strive towards being a better person, even with hiccups. Seeing him learn that while fighting against what seems like the whole world is what makes this episode a surprise this season. Even though it puts Spider-Man and Peter as afterthoughts, Farrell more than carries his share of the bargain. The villainous Big Wheel is far from an interesting rival, but it serves its purpose here. The moral dilemma is what carries this episode. A boy - without a father, important to note - finally deciding who he is and choosing his abilities to do good. This is generally considered the worst episode of the series by the fans, but I will not go that far. It could be a worse execution.
+
 .. _`Fruto Proibido`: https://en.wikipedia.org/wiki/Fruto_Proibido
 .. _here: https://www.youtube.com/watch?v=JJhKbpjfXnQ
 .. _`The Kid Who Collects Spider-Man`: https://en.wikipedia.org/wiki/The_Kid_Who_Collects_Spider-Man
