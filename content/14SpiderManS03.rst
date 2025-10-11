@@ -112,6 +112,9 @@ Daredevil arrives!
 
 One of the best parts of the show is how Spider-Man interacts with other characters from the Marvel universe. We saw great episodes with X-Men and Blade, for instance, but Daredevil - at least for me - hits a special cord. My two favorite superheroes sharing the screen is a great recipe for a special episode. Here, Peter is accused of treason against the United States government and Matt Murdock is his lawyer since the Kingpin is involved in the scheme. This is one of the most fast-paced episodes of the show so far and packs a lot of information: besides the conspiracy plot, we also get Daredevil's origin story. It is incredible how Daredevil steals the show while he shares the spotlight with our protagonist, showing the strength of the character and its search for justice. The fact he does not know who Spider-Man is only makes things more interesting, since it puts them in a adversary position, creating great tension to end the first part of the two-parter.
 
+**The Man Without Fear**
+************************
+
 .. _`Fruto Proibido`: https://en.wikipedia.org/wiki/Fruto_Proibido
 .. _here: https://www.youtube.com/watch?v=JJhKbpjfXnQ
 .. _`The Kid Who Collects Spider-Man`: https://en.wikipedia.org/wiki/The_Kid_Who_Collects_Spider-Man
