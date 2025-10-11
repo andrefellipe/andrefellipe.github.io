@@ -94,6 +94,24 @@ The third season of **Spider-Man: TAS** has every episode with the prefix The Si
 
 You are not your thoughts. Whenever a thought comes to your head, good or bad, you have the power to act or not upon it. Robert Farrell struggles with bad thoughts throughout this episode. If his past already condemns him as a criminal, why should he try to be a better person? Farrell almost gives in to the dark side on multiple occasions, but decides against it at the last minute. His caring love for his mother makes him to strive towards being a better person, even with hiccups. Seeing him learn that while fighting against what seems like the whole world is what makes this episode a surprise this season. Even though it puts Spider-Man and Peter as afterthoughts, Farrell more than carries his share of the bargain. The villainous Big Wheel is far from an interesting rival, but it serves its purpose here. The moral dilemma is what carries this episode. A boy - without a father, important to note - finally deciding who he is and choosing his abilities to do good. This is generally considered the worst episode of the series by the fans, but I will not go that far. It could be a worse execution.
 
+**Framed**
+**********                                                                                                      
+.. image:: images/14-06-S03E06-framed.png
+  :alt: Shot from the sixth episode of the third season of the Spider-Man 1994 television series.
+  :align: center
+
+.. class:: center
+
+*"They say justice is also blind. So I like to think it gives me a leg up on the competition. Judging from what you've gotten yourself into, we're going to need every bit of help we can get." - Matt Murdock*
+
+**Story by**: John Semper and Mark Hoffmeier.
+
+**Teleplay by**: Brooks Wachtel and Cynthia Harrison.
+
+Daredevil arrives!
+
+One of the best parts of the show is how Spider-Man interacts with other characters from the Marvel universe. We saw great episodes with X-Men and Blade, for instance, but Daredevil - at least for me - hits a special cord. My two favorite superheroes sharing the screen is a great recipe for a special episode. Here, Peter is accused of treason against the United States government and Matt Murdock is his lawyer since the Kingpin is involved in the scheme. This is one of the most fast-paced episodes of the show so far and packs a lot of information: besides the conspiracy plot, we also get Daredevil's origin story. It is incredible how Daredevil steals the show while he shares the spotlight with our protagonist, showing the strength of the character and its search for justice. The fact he does not know who Spider-Man is only makes things more interesting, since it puts them in a adversary position, creating great tension to end the first part of the two-parter.
+
 .. _`Fruto Proibido`: https://en.wikipedia.org/wiki/Fruto_Proibido
 .. _here: https://www.youtube.com/watch?v=JJhKbpjfXnQ
 .. _`The Kid Who Collects Spider-Man`: https://en.wikipedia.org/wiki/The_Kid_Who_Collects_Spider-Man
