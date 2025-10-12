@@ -163,6 +163,21 @@ Another mix of origin story alongside a side character getting the spotlight?
 
 Well, it is a formula that works, so why not repeat it? This time, we have Tombstone and Robbie as former friends, now turned enemies. The episode does a good job on stablishing the relationship between two characters that only had few opportunities of the bright lights. I liked how Tombstone was presented as a smart and manipulative villain instead of just a brute enforcer. Spider-Man playing catch-up also worked well, with our hero discovering the plan step-by-step and getting us back to the theme of the season: daddy issues! While having no season-wide impact on the storylines, **Tombstone** has enough of a good story and execution to not be a forgettable affair. Bad guys have a plan to kill a story from the Daily Bugle, Spider-Man and friends interviene, Madame Web shows us the way and season 3 has another good installment. Good day at the office for the show.
 
+**Venom Returns**
+*****************
+
+.. image:: images/14-10-S03E10-venom.png
+  :alt: Shot from the tenth episode of the third season of the Spider-Man 1994 television series.
+  :align: center
+
+.. class:: center
+
+*"Together again. We knew it wasn't a delusion!" - Venom*
+
+**Written by**: Stan Berkowitz, Len Wein, and John Semper.
+
+The title says it all. Venom is back and one of the show's best character returns in explosive fashion, bringing its offspring to generate Carnage. This episode is all about setting things up for a second part, with all of the pieces being put together to clearly climax in the following episode. We see Eddie Brock develop feelings for his therapist, Cletus Kasady getting caught by Spider-Man, Dormammu and Mordo's plan being executed to bring the symbiote to Earth and Stark Enterprise playing a role with its new technology. A lot of setup that does not slow down the episode, even though it is clear that the best is yet to come. And I did not even mentioned War Machine, showing up and being a strong present right away in the series. Venom is always a hit on this show and his return could not been done in better fashion.
+
 .. _`Fruto Proibido`: https://en.wikipedia.org/wiki/Fruto_Proibido
 .. _here: https://www.youtube.com/watch?v=JJhKbpjfXnQ
 .. _`The Kid Who Collects Spider-Man`: https://en.wikipedia.org/wiki/The_Kid_Who_Collects_Spider-Man
