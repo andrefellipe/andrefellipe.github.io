@@ -115,6 +115,20 @@ One of the best parts of the show is how Spider-Man interacts with other charact
 **The Man Without Fear**
 ************************
 
+.. image:: images/14-07-S03E07-fear.png
+  :alt: Shot from the seventh episode of the third season of the Spider-Man 1994 television series.
+  :align: center
+
+.. class:: center
+
+*"Sacrifices must be made." - Kingpin*
+
+**Story by**: John Semper and Mark Hoffmeier.
+
+**Teleplay by**: Sean Catherine Derek.
+
+The one where Kingpin almost gets caught. One of the final moments of this episode with the fakeout where Spider-Man and Daredevil get the villain just so to be shown that was the Chameleon was incredibly well done. Well, all of **The Man Without Fear** follows this pattern, concluding one of the best arcs of the series and raising the stakes: Peter Parker now knows that Wilson Fisk is not who he seems to be. This changes the dynamic of the show moving forward and the final scene puts this directly in our faces. But even before these final moments, the episode showed great moments, with articulate fight scenes and another origin story. Knowing more about the tragic backstory of the Kingpin adds another layer to the character and the quote above shows how brutal he can be, leaving his son to go to jail without reply at the end. The way this episode open space for Daredevil and the Kingpin to shine shows how mature the show's writing can get, a characteristic that distinguishes the show from other similar cartoons.
+
 .. _`Fruto Proibido`: https://en.wikipedia.org/wiki/Fruto_Proibido
 .. _here: https://www.youtube.com/watch?v=JJhKbpjfXnQ
 .. _`The Kid Who Collects Spider-Man`: https://en.wikipedia.org/wiki/The_Kid_Who_Collects_Spider-Man
