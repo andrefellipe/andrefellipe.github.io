@@ -146,6 +146,23 @@ The one where Kingpin almost gets caught. One of the final moments of this episo
 
 Kingpin tries to strike back with the creation of the Ultimate Slayer. The series returns to the theme of the season: paternal relationships. Alistair finds that Kingpin has been manipulating him and that his father is alive, prompting the newly-created robot to turn on Wilson Fisk. This part of the episode is not bad, but hits like a downgrade as the follow-up to the Spider-Man/Daredevil adventure from the last two episodes. Alistair is just not there as a character to have that kind of spotlight. On the other hand, Mary Jane and Harry Osborn getting married and her second thoughts is a much more interesting storyline. She explaining her feelings to Spider-Man while it struggles to keep his feelings to himself is the best part of the episode. The chemistry between the characters brings life to the screen by itself, with this love triangle promising much more to the rest of the season.
 
+**Tombstone**
+*************
+
+.. image:: images/14-09-S03E09-tombstone.png
+  :alt: Shot from the ninth episode of the third season of the Spider-Man 1994 television series.
+  :align: center
+
+.. class:: center
+
+*"Randy Robertson! What's he doing with these punks? Is crime going to infect and poison everyone I know?" - Spider-Man*
+
+**Written by**: Larry Brody, Robert N. Skir, Marty Isenberg, and John Semper.
+
+Another mix of origin story alongside a side character getting the spotlight?
+
+Well, it is a formula that works, so why not repeat it? This time, we have Tombstone and Robbie as former friends, now turned enemies. The episode does a good job on stablishing the relationship between two characters that only had few opportunities of the bright lights. I liked how Tombstone was presented as a smart and manipulative villain instead of just a brute enforcer. Spider-Man playing catch-up also worked well, with our hero discovering the plan step-by-step and getting us back to the theme of the season: daddy issues! While having no season-wide impact on the storylines, **Tombstone** has enough of a good story and execution to not be a forgettable affair. Bad guys have a plan to kill a story from the Daily Bugle, Spider-Man and friends interviene, Madame Web shows us the way and season 3 has another good installment. Good day at the office for the show.
+
 .. _`Fruto Proibido`: https://en.wikipedia.org/wiki/Fruto_Proibido
 .. _here: https://www.youtube.com/watch?v=JJhKbpjfXnQ
 .. _`The Kid Who Collects Spider-Man`: https://en.wikipedia.org/wiki/The_Kid_Who_Collects_Spider-Man
