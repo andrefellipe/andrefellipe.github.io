@@ -208,6 +208,21 @@ Spider-Man, Venom, Carnage, Iron Man, Mordo, Dr. Kafka and Dormammu all together
 
 **The Spot** is without a doubt in my mind the worst episode of the series. Johnathon Ohnn is a scientist who created the time dilation accelerator portal-making machine for Tony Stark. Kingpin approaches him and, after an accident, he is transformed into the villain named Spot. He uses his abilities to teleport himself into any place to steal money for his research. Spider-Man is in the position to stop him. The premise is weak and the antagonist poses little threat to our hero, making this a chore to go through. The best part of the episode is related to Peter and Mary Jane getting back together and the tease at the end with the return of the Hobgoblin, which brings us to...
 
+**Goblin War!**
+***************
+
+.. image:: images/14-13-S03E13-war.png
+  :alt: Shot from the thirteen episode of the third season of the Spider-Man 1994 television series.
+  :align: center
+
+.. class:: center
+
+*"I must've gotten hit hard. I'm seeing double." - Spider-Man*
+
+**Written by**: Mark Hoffmeier, John Semper, Robert N. Skir, and Marty Isenberg.
+
+The Goblin War! The time dilation accelerator remains an important plot point for the series and every villain wants to get its hands on the device. Spider-Man must stop all of them, but, considering that two of them are the goblins, they may as well just destroy each other by themselves to get it. Norman Osborn going insane again is always fun and his rampage against the Hobgoblin shows the hierarchy between them. Speaking of him, we learn the identity of the yellow goblin and this adds a lot to the episode. The overall idea of pitting the goblins against each other is a creative win for the series, setting up the stakes for a very interesting finale next.
+
 .. _`Fruto Proibido`: https://en.wikipedia.org/wiki/Fruto_Proibido
 .. _here: https://www.youtube.com/watch?v=JJhKbpjfXnQ
 .. _`The Kid Who Collects Spider-Man`: https://en.wikipedia.org/wiki/The_Kid_Who_Collects_Spider-Man
