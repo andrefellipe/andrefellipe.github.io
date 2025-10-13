@@ -7,7 +7,7 @@ Spider-Man: The Animated Series (Season 04)
 :category: tv
 :slug: spider-man-season-four
 :authors: Andre Fellipe da Silva
-:summary: This post was written to the sound of Alt J's `An Awesome Wave`_. You can listen one of the songs here_.
+:summary: Once again, we're back. I'll finish these reviews of the show until the end of 2025. I promise. This post was written to the sound of Alt J's `An Awesome Wave`_. You can listen one of the songs here_.
 
 After the best episode of the series, Season 4 of **Spider-Man: TAS** has high expectations. Can the show keep the momentum? Let's find out.
 
