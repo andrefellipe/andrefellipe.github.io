@@ -223,6 +223,23 @@ Spider-Man, Venom, Carnage, Iron Man, Mordo, Dr. Kafka and Dormammu all together
 
 The Goblin War! The time dilation accelerator remains an important plot point for the series and every villain wants to get its hands on the device. Spider-Man must stop all of them, but, considering that two of them are the goblins, they may as well just destroy each other by themselves to get it. Norman Osborn going insane again is always fun and his rampage against the Hobgoblin shows the hierarchy between them. Speaking of him, we learn the identity of the yellow goblin and this adds a lot to the episode. The overall idea of pitting the goblins against each other is a creative win for the series, setting up the stakes for a very interesting finale next.
 
+**Turning Point**
+*****************
+
+.. image:: images/14-14-S03E14-turning.png
+  :alt: Shot from the fourteenth episode of the third season of the Spider-Man 1994 television series.
+  :align: center
+
+.. class:: center
+
+*"Yes, yes. Take off your mask. Reveal your secret identity to your greatest enemy. At last Spider-Man's greatest secret is mine. What! The Green Goblin's greatest foe a mere boy?! Impossible! Impossible!" - Green Goblin*
+
+**Written by**: James Krieg, John Semper, Robert N. Skir, and Marty Isenberg.
+
+The best episode of the series and one of the best adaptations of the "Green Goblin finds out who Spider-Man is" story ever created, **Turning Point** is a beautiful episode of television. The Season Finale amps up the tension and creates twenty minutes of magic, with the Green Goblin getting the upper hand on our hero because of the time dilation accelerator. I love how fast this episode is and how dedicated it is to settling the score between Spider-Man and Green Goblin, even throwing both of their respective families into the mix. The final moments of the episode are riveting, with Mary Jane disappearing and a lost Peter Parker seeking help from Madame Web to no avail. Now we get to see what our hero is made of, with the first major loss for him thanks to his work almost changing him right out of the gate. Spider-Man not falling into revenge and trying to help the goblin at the end even with all of the chaos that just happened is a great exemplification of why he is a special character. All in all, the season ends with the highlight and a new mission for our protagonist: find Mary Jane Watson.
+
+This finishes the review of Season 3 of **Spider-Man: The Animated Series**. The show added a lot of recurring elements that will still return, such as Madame Web and Iron Man, while bringing back some of the greatest hits in the Hobgoblin and Venom. We are introduced to Spider-Man being chosen to lead a special mission, which shows that there are higher stakes than what we are currently seeing. There were some special lows and the mystic world storylines did not do much for me, as well as the overall theme of the season, but the highs were some of the best moments of the series so far and the Season Finale is incredible. Let's see what Season 4 brings us soon!
+
 .. _`Fruto Proibido`: https://en.wikipedia.org/wiki/Fruto_Proibido
 .. _here: https://www.youtube.com/watch?v=JJhKbpjfXnQ
 .. _`The Kid Who Collects Spider-Man`: https://en.wikipedia.org/wiki/The_Kid_Who_Collects_Spider-Man
