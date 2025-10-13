@@ -193,20 +193,20 @@ The title says it all. Venom is back and one of the show's best character return
 
 Spider-Man, Venom, Carnage, Iron Man, Mordo, Dr. Kafka and Dormammu all together in a crazy fight sequence was quite a cast to blend together in this two-part episode. And I believe the end result was good to watch. While it may be a tad disappointment to have this cast revolve around Dormammu and the plot of the mystic world, the execution was still something fun. The worst part was that now Venom and Carnage were sent away at the end, meaning that appearances from them now are highly unlikely, which is a shame. Venom is one of Spider-Man's main villains and his story in this show - while always great - could have been more in terms of quantity. The whole idea of having Spider-Man and Iron Man together with Venom to fight the bad guys made it for a great dynamic, which guaranteed the success of the episode.
 
-**Carnage**
-***********
+**The Spot**
+************
 
-.. image:: images/14-11-S03E11-carnage.png
-  :alt: Shot from the eleventh episode of the third season of the Spider-Man 1994 television series.
+.. image:: images/14-12-S03E12-spot.png
+  :alt: Shot from the twelfth episode of the third season of the Spider-Man 1994 television series.
   :align: center
 
 .. class:: center
 
-*"That was good for an old guy." - Carnage*
+*"Shouln't you be the mascot at a fire station or something." - Spider-Man*
 
-**Written by**: Stan Berkowitz, James Krieg, and John Semper.
+**Written by**: James Krieg.
 
-Spider-Man, Venom, Carnage, Iron Man, Mordo, Dr. Kafka and Dormammu all together in a crazy fight sequence was quite a cast to blend together in this two-part episode. And I believe the end result was good to watch. While it may be a tad disappointment to have this cast revolve around Dormammu and the plot of the mystic world, the execution was still something fun. The worst part was that now Venom and Carnage were sent away at the end, meaning that appearances from them now are highly unlikely, which is a shame. Venom is one of Spider-Man's main villains and his story in this show - while always great - could have been more in terms of quantity. The whole idea of having Spider-Man and Iron Man together with Venom to fight the bad guys made it for a great dynamic, which guaranteed the success of the episode.
+**The Spot** is without a doubt in my mind the worst episode of the series. Johnathon Ohnn is a scientist who created the time dilation accelerator portal-making machine for Tony Stark. Kingpin approaches him and, after an accident, he is transformed into the villain named Spot. He uses his abilities to teleport himself into any place to steal money for his research. Spider-Man is in the position to stop him. The premise is weak and the antagonist poses little threat to our hero, making this a chore to go through. The best part of the episode is related to Peter and Mary Jane getting back together and the tease at the end with the return of the Hobgoblin, which brings us to...
 
 .. _`Fruto Proibido`: https://en.wikipedia.org/wiki/Fruto_Proibido
 .. _here: https://www.youtube.com/watch?v=JJhKbpjfXnQ
