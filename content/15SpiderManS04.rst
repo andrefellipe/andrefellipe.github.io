@@ -24,11 +24,28 @@ Bob Richardson directed all episodes.
 
 *"I hope you'll change your mind about taking pictures of Spider-Man, Peter. I've never been more convinced in my life that Spider-Man is a true hero. I know his job's not easy, but he's exactly what this city, this world, needs right now. I hope he never gives up." - Joseph Robertson*
 
-**Written by:** Larry Brody and Meg McLaughlin.
+**Story by**: John Semper.
 
-**Story:** John Semper.
+**Teleplay by:** Larry Brody and Meg McLaughlin.
 
 Guilt is a strong sentiment that drives Spider-Man for most of the premiere. Flashbacks from the previous Season Finale start us this season and what follows is a conflicted Spider-Man that thinks that his antics do more harm than good. We went in this place before in the series, but this time the stakes are higher since we are talking about the disappearance of Mary Jane. To surpass this, a small redemption story is a good starting point. Kingpin sets up Robbie and Spider-Man partners with "Jigsaw" Jameson to save him. The dynamic between the journalist and the hero here is great, generating some laughs along the way. While the episode is nice, it also feels like we already have this discussion about how Spider-Man does good to the world before in the series, so I believe that not much was added to the topic here. A solid start to the season to get us started.
+
+**The Cat**
+***********
+
+.. image:: images/15-02-S04E02-cat.png
+  :alt: Shot from the second episode of the fourth season of the Spider-Man 1994 television series.
+  :align: center
+
+.. class:: center
+
+*"Why do I always fall for mysterious men? Jason, Michael, Spider-Man. Men who are wrapped in the dark blanket of the night." - Felicia Hardy*
+
+**Story by**: John Semper.
+
+**Teleplay by**: Sean Catherine Derek.
+
+Felicia Hardy was always an interesting presence throughout the series, but it is about to receive a new spotlight as the Black Cat. This episode starts this, with her family once again in trouble. The way the writing combines a Kingpin plot with Captain America's origin and the Hardy family is really well done and a clever connection between stories. I am excited to have this new approach on the character and this kickoff of the plot shows how the show can take a side character and make a interesting storyline with deep connections to well-known comic book arcs. The lowlight here was Dr. Octopus just being a hired gun for the Kingpin, even though we know that the character can be much more.
 
 .. _`An Awesome Wave`: https://en.wikipedia.org/wiki/An_Awesome_Wave
 .. _here: https://www.youtube.com/watch?v=rVeMiVU77wo
