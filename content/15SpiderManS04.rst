@@ -64,5 +64,20 @@ Felicia Hardy was always an interesting presence throughout the series, but it i
 
 The Black Cat is now officially with us. Kingpin develops the serum to create the Super Soldiers and applies it on Felicia Hardy. In this beginning, Spider-Man has great chemistry with her. The initial scene between them has great lines and tension that resonates through the rest of the episode. One of the best aspects of this relationship is that the Black Cat respected Spider-Man's identity and he does not know who she is, which makes the partnership more fun. Overall, Kingpin's plan to create super criminals is a little stupid and one of the instances where his idea makes little sense and is needed only to advance the plot. Even with a soft story, the moments between the main characters and the Hardy family more than make things up.
 
+**The Return of Kraven**
+************************
+
+.. image:: images/15-04-S04E04-kraven.png
+  :alt: Shot from the fourth episode of the fourth season of the Spider-Man 1994 television series.
+  :align: center
+
+.. class:: center
+
+*"There's nothing that beast can dish out that this beauty can't handle." - Black Cat*
+
+**Written by**: Meg McLaughlin.
+
+A good story needs a good villain. While the addition of the Black Cat is adding a lot to the show, Kraven returning does not do much for me. The best part of this episode is Spider-Man turning away the Black Cat for fear of hurting someone once again. Our hero turns to bitterness in multiple points of the episode while trying to understand why Kraven is back. The plot involving the Hunter is not that interesting, but the character moments from all characters here makes up for it. The ending is also an interesting part, with Peter moving in with Harry even after their issues throughout the last season. An enjoyable - even though forgettable - installment of the show.
+
 .. _`An Awesome Wave`: https://en.wikipedia.org/wiki/An_Awesome_Wave
 .. _here: https://www.youtube.com/watch?v=rVeMiVU77wo
