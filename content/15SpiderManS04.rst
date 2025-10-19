@@ -79,5 +79,22 @@ The Black Cat is now officially with us. Kingpin develops the serum to create th
 
 A good story needs a good villain. While the addition of the Black Cat is adding a lot to the show, Kraven returning does not do much for me. The best part of this episode is Spider-Man turning away the Black Cat for fear of hurting someone once again. Our hero turns to bitterness in multiple points of the episode while trying to understand why Kraven is back. The plot involving the Hunter is not that interesting, but the character moments from all characters here makes up for it. The ending is also an interesting part, with Peter moving in with Harry even after their issues throughout the last season. An enjoyable - even though forgettable - installment of the show.
 
+**Partners**
+************
+
+.. image:: images/15-05-S04E05-partners.png
+  :alt: Shot from the fifth episode of the fourth season of the Spider-Man 1994 television series.
+  :align: center
+
+.. class:: center
+
+*"Maybe I should take superhero lessons from the Hulk instead." - Black Cat*
+
+**Story by**: John Semper.
+
+**Teleplay by**: Cynthia Harrison and Brooks Wachtel.
+
+The fourth season of **Spider-Man: TAS** relies a lot on the dynamic between Spider-Man and the Black Cat, positioning her as a main recurrent character in a way we did not see before in the series. Even so, we arrive at the fifth episode of the season without a major storyline itself besides the relationship between them. This results in episodes such as **Partners**, where the stakes are not that high, but the show still keeps delivering enjoyable adventures. This time, the cast of the episode involves a lot of villains, but the highlight goes to the Scorpion, one of the best characters of the show. Here, he fights to cure himself from his disease to get married. He is unable to do so, but the way the writing puts him going from hero to villain to hero multiple times in the episode itself humanizes our green friend.
+
 .. _`An Awesome Wave`: https://en.wikipedia.org/wiki/An_Awesome_Wave
 .. _here: https://www.youtube.com/watch?v=rVeMiVU77wo
