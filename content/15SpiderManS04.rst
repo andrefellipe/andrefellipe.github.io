@@ -96,5 +96,22 @@ A good story needs a good villain. While the addition of the Black Cat is adding
 
 The fourth season of **Spider-Man: TAS** relies a lot on the dynamic between Spider-Man and the Black Cat, positioning her as a main recurrent character in a way we did not see before in the series. Even so, we arrive at the fifth episode of the season without a major storyline itself besides the relationship between them. This results in episodes such as **Partners**, where the stakes are not that high, but the show still keeps delivering enjoyable adventures. This time, the cast of the episode involves a lot of villains, but the highlight goes to the Scorpion, one of the best characters of the show. Here, he fights to cure himself from his disease to get married. He is unable to do so, but the way the writing puts him going from hero to villain to hero multiple times in the episode itself humanizes our green friend.
 
+**The Awakening**
+*****************
+
+.. image:: images/15-06-S04E06-awakening.png
+  :alt: Shot from the sixth episode of the fourth season of the Spider-Man 1994 television series.
+  :align: center
+
+.. class:: center
+
+*"I should be catching crooks. For once, I'm actually having fun." - Spider-Man*
+
+**Story by**: John Semper.
+
+**Teleplay by**: Sean Catherine Derek.
+
+As expected since Felicia Hardy is a major plot point, Morbius returns in vampire form. At this point, the show feels like it is only hitting on its greatest hits from previous seasons because of a lack of creativity. Sometimes characters that have great sendoffs before can return to enjoyable success - such as Scorpion previously - but this time with Morbius is not the same. A lot of the writing is hitting on the same beat and even our interesting one-liners are not there. The only great aspect here is once again Spider-Man struggling to move on from Mary Jane and his interactions with the Black Cat. This is the point of the show's history where things seem most off and a return to form is needed.
+
 .. _`An Awesome Wave`: https://en.wikipedia.org/wiki/An_Awesome_Wave
 .. _here: https://www.youtube.com/watch?v=rVeMiVU77wo
