@@ -113,5 +113,22 @@ The fourth season of **Spider-Man: TAS** relies a lot on the dynamic between Spi
 
 As expected since Felicia Hardy is a major plot point, Morbius returns in vampire form. At this point, the show feels like it is only hitting on its greatest hits from previous seasons because of a lack of creativity. Sometimes characters that have great sendoffs before can return to enjoyable success - such as Scorpion previously - but this time with Morbius is not the same. A lot of the writing is hitting on the same beat and even our interesting one-liners are not there. The only great aspect here is once again Spider-Man struggling to move on from Mary Jane and his interactions with the Black Cat. This is the point of the show's history where things seem most off and a return to form is needed.
 
+**The Vampire Queen**
+*********************
+
+.. image:: images/15-07-S04E07-queen.png
+  :alt: Shot from the seventh episode of the fourth season of the Spider-Man 1994 television series.
+  :align: center
+
+.. class:: center
+
+*"What did I do wrong? Now Black Cat's left me, Felicia's gone, and Mary Jane's still missing. Well, at least there's nowhere to go from here but up." - Spider-Man*
+
+**Story by**: John Semper.
+
+**Teleplay by**: Meg McLaughlin and John Semper.
+
+More people return, but no spark is seen. This is the theme of the season so far. **The Vampire Queen** is not a bad episode, but it is one where the only piece more interesting than anything by the numbers is the Black Cat leaving and Spider-Man reaction to it. Blade's mother is a vampire that wants to create an army of vampires is by itself not an interesting story and having many characters around it just feels like having an All-Star team not facing any real foe. And, even worse, the story barely concludes, with Blade still hunting his mother at the end, but now with the help of Morbius and the Black Cat. Let's just see who else can return to light up the season.
+
 .. _`An Awesome Wave`: https://en.wikipedia.org/wiki/An_Awesome_Wave
 .. _here: https://www.youtube.com/watch?v=rVeMiVU77wo
