@@ -130,5 +130,20 @@ As expected since Felicia Hardy is a major plot point, Morbius returns in vampir
 
 More people return, but no spark is seen. This is the theme of the season so far. **The Vampire Queen** is not a bad episode, but it is one where the only piece more interesting than anything by the numbers is the Black Cat leaving and Spider-Man reaction to it. Blade's mother is a vampire that wants to create an army of vampires is by itself not an interesting story and having many characters around it just feels like having an All-Star team not facing any real foe. And, even worse, the story barely concludes, with Blade still hunting his mother at the end, but now with the help of Morbius and the Black Cat. Let's just see who else can return to light up the season.
 
+**The Return of the Green Goblin**
+**********************************
+
+.. image:: images/15-08-S04E08-goblin.png
+  :alt: Shot from the eighth episode of the fourth season of the Spider-Man 1994 television series.
+  :align: center
+
+.. class:: center
+
+*"Hello, young Osborn. It's about time you got up. There's lots we have to do together." - Green Goblin*
+
+**Written by**: Mark Hoffmeier.
+
+Harry Osborn snaps and the Green Goblin is once again terrorizing our hero. This was a return to form to the series, bringing back one of the main villains and the responsible part for the main arc of the show: the disappearance of Mary Jane Watson. Also, the Punisher is back to try to find MJ. All of these explosive pieces create a really good flow for the episode, which finishes with the return of Mary Jane, a great cliffhanger since there is no explanation yet to what has happened. The show does a good job of showing Harry Osborn descending into madness, even though he was never portrayed as a serious threat, the addition of the Goblin manipulating him more than makes up for this new facet of the character. Overall, this was a long overdue great episode for the series.
+
 .. _`An Awesome Wave`: https://en.wikipedia.org/wiki/An_Awesome_Wave
 .. _here: https://www.youtube.com/watch?v=rVeMiVU77wo
