@@ -171,13 +171,32 @@ Fun fact: the ending of this episode is one of my earliest childhood memories. S
 
 .. class:: center
 
-*"Great! This is exactly why I got out of professional wrestling" - Spider-Man*
+*"Great! This is exactly why I got out of professional wrestling." - Spider-Man*
 
 **Story by**: John Semper.
 
 **Teleplay by**: Gordon Kent.
 
 The lizards want to take over the world. It is interesting how the fourth season is full of episodes where the chemistry between Spider-Man and a partner - in this case, Mary Jane - is great, but it is inserted in a weak premise such as the lizards wanting Doctor Connors to be their king. It is interesting how Spider-Man is such a great protagonist that everyone that comes close to him has good chemistry, which helps a lot of the writing. This was not the best of efforts because of the premise, but it is still a show for children and it is expected to have installments such as this one.
+
+**The Prowler**
+***************
+
+.. image:: images/15-11-S04E11-prowler.png
+  :alt: Shot from the eleventh episode of the fourth season of the Spider-Man 1994 television series.
+  :align: center
+
+.. class:: center
+
+*"Nice claws! Do you ever hang out with my friend Wolverine?" - Spider-Man*
+
+**Story by**: John Semper.
+
+**Teleplay by**: Terrence Taylor.
+
+The season ends with a flashback episode that shows the origins of the Prowler. That certainly is a decision. It is difficult to understand the thought process behind a Season Finale that focus totally on a new character with Spider-Man being an afterthought, specially considering how Season 3 ended. The lack of a bigger arc really made this season feels like it just went through the motions and we have more questions than answers regarding Mary Jane's disappearance. Once again, the premise of the episode is weak. Even with a good execution, it just feels like the show could be more ambitious throughout the episode and the season. The Prowler being betrayed by the Kingpin was predictable and seemed like you could guess what would happen in each scene before it came on. In a recurrent theme for the season, the best bits comes from Mary Jane and Peter making their life decisions together and planning the wedding. It is still great how the show creates great partnerships for our protagonist.
+
+So, that is the end of Season 4, easily the weakest of the show so far. I felt like the show did not have a creative spark this season, relying too much into character work that was effective to keep things afloat, but no major story to really stand out. The overall feeling after each episode generally went "good, not great, I will forget about it soon I'm sure". It is just disappointing because we already know how mature and great **Spider-Man: TAS** can be. Let's hope for a better final season.
 
 .. _`An Awesome Wave`: https://en.wikipedia.org/wiki/An_Awesome_Wave
 .. _here: https://www.youtube.com/watch?v=rVeMiVU77wo
