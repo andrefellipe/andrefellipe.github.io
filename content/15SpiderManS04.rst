@@ -145,5 +145,20 @@ More people return, but no spark is seen. This is the theme of the season so far
 
 Harry Osborn snaps and the Green Goblin is once again terrorizing our hero. This was a return to form to the series, bringing back one of the main villains and the responsible part for the main arc of the show: the disappearance of Mary Jane Watson. Also, the Punisher is back to try to find MJ. All of these explosive pieces create a really good flow for the episode, which finishes with the return of Mary Jane, a great cliffhanger since there is no explanation yet to what has happened. The show does a good job of showing Harry Osborn descending into madness, even though he was never portrayed as a serious threat, the addition of the Goblin manipulating him more than makes up for this new facet of the character. Overall, this was a long overdue great episode for the series.
 
+**The Haunting of Mary Jane Watson**
+************************************
+
+.. image:: images/15-09-S04E09-haunting.png
+  :alt: Shot from the ninth episode of the fourth season of the Spider-Man 1994 television series.
+  :align: center
+
+.. class:: center
+
+*"Mary Jane, all this has made me realize just how precious you are to me." - Spider-Man*
+
+**Written by**: Mark Hoffmeier.
+
+Fun fact: the ending of this episode is one of my earliest childhood memories. Spider-Man removing his mask to show his true identity is always a major plot point in every Spider-Man adaptation and this time is no different. I love the ending of this episode. Quick and sudden. The rest of the episode is good, with Mysterio returning and in love with an actress he tried to help recover from an accident. The plot is good and this is one of the rare instances of the show actually killing a character. Goodbye, Mysterio.
+
 .. _`An Awesome Wave`: https://en.wikipedia.org/wiki/An_Awesome_Wave
 .. _here: https://www.youtube.com/watch?v=rVeMiVU77wo
