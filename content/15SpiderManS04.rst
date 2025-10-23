@@ -156,7 +156,9 @@ Harry Osborn snaps and the Green Goblin is once again terrorizing our hero. This
 
 *"Mary Jane, all this has made me realize just how precious you are to me." - Spider-Man*
 
-**Written by**: Mark Hoffmeier.
+**Story by**: John Semper and Virginia Roth.
+
+**Teleplay by**: Meg McLaughlin and John Semper.
 
 Fun fact: the ending of this episode is one of my earliest childhood memories. Spider-Man removing his mask to show his true identity is always a major plot point in every Spider-Man adaptation and this time is no different. I love the ending of this episode. Quick and sudden. The rest of the episode is good, with Mysterio returning and in love with an actress he tried to help recover from an accident. The plot is good and this is one of the rare instances of the show actually killing a character. Goodbye, Mysterio.
 
