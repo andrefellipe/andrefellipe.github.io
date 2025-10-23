@@ -162,5 +162,22 @@ Harry Osborn snaps and the Green Goblin is once again terrorizing our hero. This
 
 Fun fact: the ending of this episode is one of my earliest childhood memories. Spider-Man removing his mask to show his true identity is always a major plot point in every Spider-Man adaptation and this time is no different. I love the ending of this episode. Quick and sudden. The rest of the episode is good, with Mysterio returning and in love with an actress he tried to help recover from an accident. The plot is good and this is one of the rare instances of the show actually killing a character. Goodbye, Mysterio.
 
+**The Lizard King**
+*******************
+
+.. image:: images/15-10-S04E10-lizard.png
+  :alt: Shot from the tenth episode of the fourth season of the Spider-Man 1994 television series.
+  :align: center
+
+.. class:: center
+
+*"Great! This is exactly why I got out of professional wrestling" - Spider-Man*
+
+**Story by**: John Semper.
+
+**Teleplay by**: Gordon Kent.
+
+The lizards want to take over the world. It is interesting how the fourth season is full of episodes where the chemistry between Spider-Man and a partner - in this case, Mary Jane - is great, but it is inserted in a weak premise such as the lizards wanting Doctor Connors to be their king. It is interesting how Spider-Man is such a great protagonist that everyone that comes close to him has good chemistry, which helps a lot of the writing. This was not the best of efforts because of the premise, but it is still a show for children and it is expected to have installments such as this one.
+
 .. _`An Awesome Wave`: https://en.wikipedia.org/wiki/An_Awesome_Wave
 .. _here: https://www.youtube.com/watch?v=rVeMiVU77wo
