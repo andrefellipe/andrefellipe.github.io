@@ -30,7 +30,7 @@ Bob Richardson directed all episodes.
 
 Mary Jane Watson and Peter Parker are ready to tie the knot, but there are major obstacles to be faced before and during the cerimony. The season starts off in strong fashion, with a dynamic and interesting storyline with the Green Goblin returning to make sure the wedding does not go as planned. My favorite part was both Jameson and the Kingpin trying to get one over the other to see who can better help at the wedding, a funny dynamic that added a lot. The Green Goblin returning is always welcoming and see Harry getting better at the end thanks to Liz is a good way to finish the character's arc. The final season finishes up one of the previous season main storylines to kick us off. Let's hope the momentum can be maintained.
 
-**Six Forgotten Warriorrs: Chapter I**
+**Six Forgotten Warriors: Chapter I**
 **************************************
 
 .. image:: images/16-02-S05E02-warriors.png
@@ -44,6 +44,21 @@ Mary Jane Watson and Peter Parker are ready to tie the knot, but there are major
 **Written by**: John Semper.
 
 Now, let's add a little bit of the Cold War to the show. Peter Parker's parents as Russian spies? Worked for me, I guess. While this storyline is a little bit out there, the execution of this first part really sets the stage well. The Sinister Six is back thanks to the Kingpin, Parker convinces Jameson to go to Russia in the funniest way possible and May Parker is a global threat. So much happens in this episode that makes me excited to see long-term storytelling once again. The action scenes are well made and now we will uncover a mystery our protagonist's parents. All of this in Russia. Seems like the show is back on form with a spy novel thriller being developed.
+
+**Unclaimed Legacy**
+********************
+
+.. image:: images/16-03-S05E03-legacy.png
+  :alt: Shot from the third episode of the fifth season of the Spider-Man 1994 television series.
+  :align: center
+
+.. class:: center
+
+*"World domination? Kingpin, now you sound like a Saturday morning cartoon villain." - Spider-Man*
+
+**Written by**: John Semper.
+
+Our hero heads to Moscow and all the trouble possible follows him there. Kingpin wants the Doomsday Device and has the Sinister Six to help, and this time they are on the same page. Red Skull almost shows up, but it is his son at this moment. The plot thickens and anticipation begins to mount regarding when Red Skull will show up and what kind of threat will he bring. There was a lot of action and fighting here, with the new surroundings doing the show a breath of fresh air. A good follow-up that did not advance that much of the story, but still brought good action and a resolution to the spy story where we discover that Peter's parents were not spies.
 
 .. _`Heartbeat City`: https://en.wikipedia.org/wiki/Heartbeat_City
 .. _here: https://www.youtube.com/watch?v=E0Kv6vxZwL8
