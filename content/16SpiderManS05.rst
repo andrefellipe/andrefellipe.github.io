@@ -60,5 +60,20 @@ Now, let's add a little bit of the Cold War to the show. Peter Parker's parents 
 
 Our hero heads to Moscow and all the trouble possible follows him there. Kingpin wants the Doomsday Device and has the Sinister Six to help, and this time they are on the same page. Red Skull almost shows up, but it is his son at this moment. The plot thickens and anticipation begins to mount regarding when Red Skull will show up and what kind of threat will he bring. There was a lot of action and fighting here, with the new surroundings doing the show a breath of fresh air. A good follow-up that did not advance that much of the story, but still brought good action and a resolution to the spy story where we discover that Peter's parents were not spies.
 
+**Secrets of the Six**
+**********************
+
+.. image:: images/16-04-S05E04-secrets.png
+  :alt: Shot from the fourth episode of the fifth season of the Spider-Man 1994 television series.
+  :align: center
+
+.. class:: center
+
+*"Miss America? The Thunderer? With those names, they expected to be taken seriously?" - Peter Parker*
+
+**Written by**: John Semper.
+
+The world's tackiest super heroes are revealed. The Six Forgotten Warriors backstory is an interesting one, but the characters themselves are tacky, no doubt about it. We spend ten minutes of the episode learning about these new characters and how Captain America fought Red Skull during World War II, really expanding the show's universe with this decision. I find it interesting how the Insidious Six are being used in this arc, being the muscle to go after the Six Forgotten Warriors. Matching the heroes and villains in groups of six creates good action scenes between the thugs and the old school heroes. From a deeper point of view, the final reflection that Peter has regarding where his life will end up is one of the coolest reflections from the show. While not a top tier story from the show, the arc is a return to form to the show and I am excited for its conclusion.
+
 .. _`Heartbeat City`: https://en.wikipedia.org/wiki/Heartbeat_City
 .. _here: https://www.youtube.com/watch?v=E0Kv6vxZwL8
