@@ -73,7 +73,22 @@ Our hero heads to Moscow and all the trouble possible follows him there. Kingpin
 
 **Written by**: John Semper.
 
-The world's tackiest super heroes are revealed. The Six Forgotten Warriors backstory is an interesting one, but the characters themselves are tacky, no doubt about it. We spend ten minutes of the episode learning about these new characters and how Captain America fought Red Skull during World War II, really expanding the show's universe with this decision. I find it interesting how the Insidious Six are being used in this arc, being the muscle to go after the Six Forgotten Warriors. Matching the heroes and villains in groups of six creates good action scenes between the thugs and the old school heroes. From a deeper point of view, the final reflection that Peter has regarding where his life will end up is one of the coolest reflections from the show. While not a top tier story from the show, the arc is a return to form to the show and I am excited for its conclusion.
+The world's tackiest super heroes are revealed. The Six Forgotten Warriors backstory is an interesting one, but the characters themselves are tacky, no doubt about it. We spend ten minutes of the episode learning about these new characters and how Captain America fought Red Skull during World War II, really expanding the show's universe with this decision. I find it interesting how the Insidious Six are being used in this arc, being the muscle to go after the Six Forgotten Warriors. Matching the heroes and villains in groups of six creates good action scenes between the thugs and the old school heroes. From a deeper point of view, the final reflection that Peter has regarding where his life will end up is one of the coolest reflections from the show. While not a top tier story from the show, the arc is a return to form to the show and I am excited for its continuation.
+
+**The Six Fight Again**
+***********************
+
+.. image:: images/16-05-S05E05-six.png
+  :alt: Shot from the fifth episode of the fifth season of the Spider-Man 1994 television series.
+  :align: center
+
+.. class:: center
+
+*"Nice catch! Did you ever think of trying out for the Yankees" - Spider-Man*
+
+**Written by**: John Semper.
+
+The Six American Warriors. The Insidious Six. Red Skull's family. Spider-Man. God knows who else. We approach the end of the arc in explosive fashion, with Kingpin finally getting the six statues together and Red Skull coming back. It is always great when the show can put all of the characters interacting together in well-made fight scenes. Even with a lot of people, these episodes do not look bloated since everyone has a part to play. Captain America returning as well is a lot of fun. Everytime someone thinks they have the upper hand, a new development happens and the tension mounts again, which is awesome. The Cold War climate and espionage atmosphere is doing wonders for this arc, so expectations are high for the resolution in the next episode.
 
 .. _`Heartbeat City`: https://en.wikipedia.org/wiki/Heartbeat_City
 .. _here: https://www.youtube.com/watch?v=E0Kv6vxZwL8
