@@ -84,11 +84,26 @@ The world's tackiest super heroes are revealed. The Six Forgotten Warriors backs
 
 .. class:: center
 
-*"Nice catch! Did you ever think of trying out for the Yankees" - Spider-Man*
+*"Nice catch! Did you ever think of trying out for the Yankees?" - Spider-Man*
 
 **Written by**: John Semper.
 
 The Six American Warriors. The Insidious Six. Red Skull's family. Spider-Man. God knows who else. We approach the end of the arc in explosive fashion, with Kingpin finally getting the six statues together and Red Skull coming back. It is always great when the show can put all of the characters interacting together in well-made fight scenes. Even with a lot of people, these episodes do not look bloated since everyone has a part to play. Captain America returning as well is a lot of fun. Everytime someone thinks they have the upper hand, a new development happens and the tension mounts again, which is awesome. The Cold War climate and espionage atmosphere is doing wonders for this arc, so expectations are high for the resolution in the next episode.
+
+**The Price of Heroism**
+************************
+
+.. image:: images/16-06-S05E06-heroism.png
+  :alt: Shot from the sixth episode of the fifth season of the Spider-Man 1994 television series.
+  :align: center
+
+.. class:: center
+
+*"The time has come. Submission or oblivion: the choice is yours." - Elektro*
+
+**Written by**: John Semper.
+
+The Doomsday device is our friend... Elektro, the ultimate weapon. This is an interesting choice, I never saw Elektro as this major threat that warrants a full storyline that culminates on him being the big bad of the arc. While I have this reservation, the execution is pratically flawless, with Elektro being portrayed as an all-powerful entity causing chaos throughout the world and everyone having difficulties stopping him. We see Captain America and Red Skull get absorved in the vortex again and Spider-Man saving the day for everyone, almost putting the world in the status quo of the 1940s. This arc is a victory for the show, being able to keep up good writing through five continuous episodes that felt like a spy novel combined with superhero shenanigans. If you told me that the show would have made a five-part episode with a bunch of new superheroes work, I would bet against, but long-term storytelling is one of the strongest parts of **Spider-Man: TAS** and this was shown once again here.
 
 .. _`Heartbeat City`: https://en.wikipedia.org/wiki/Heartbeat_City
 .. _here: https://www.youtube.com/watch?v=E0Kv6vxZwL8
