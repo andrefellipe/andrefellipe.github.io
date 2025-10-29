@@ -122,5 +122,22 @@ The Doomsday device is our friend... Elektro, the ultimate weapon. This is an in
 
 So... that ending, huh? Hydro-Man returns and we have what appeared to be a paint by numbers episode very much similar to the Season 2 one. Morrie shows up, is obsessed with Mary Jane, kidnaps her and Spider-Man comes in to save the day. But, actually, this time around the episode finishes with Mary Jane unleashing a water blast that sends Hydro-Man away. Now the cliffhanger is: how is she able to do that? This adds a lot and let's hope the show can deliver a good answer to that question.
 
+**The Return of Hydro-Man: Part Two**
+*************************************
+
+.. image:: images/16-08-S05E08-hydro2.png
+  :alt: Shot from the eighth episode of the fifth season of the Spider-Man 1994 television series.
+  :align: center
+
+.. class:: center
+
+*"If any part of me is anything like the real Mary Jane Watson, she loves Peter Parker more than anything in the world." - Clone Version of Mary Jane Watson*
+
+**Story by**: John Semper.
+
+**Teleplay by**: Meg McLaughlin and John Semper.
+
+Now, that's emotion. After multiple episodes putting Peter Parker in a happy romantic situation, the show pulls the rug right from under us in a blink, revealing that the Mary Jane that returned is actually a clone created by Miles Warren. This is a great episode that turns the tide for our hero in an emotional level, with him displaying anger and disbelief in incredible fashion at the end of the episode. I remember the first time I watched Spider-Man losing it while the Mary Jane clone disappears and I was shocked at the depth that the series went. The plot twist was executed in brilliant fashion and now Madame Web is back to help him get Mary Jane back in exchange for our new story arc.
+
 .. _`Heartbeat City`: https://en.wikipedia.org/wiki/Heartbeat_City
 .. _here: https://www.youtube.com/watch?v=E0Kv6vxZwL8
