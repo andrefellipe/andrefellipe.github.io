@@ -105,5 +105,22 @@ The Six American Warriors. The Insidious Six. Red Skull's family. Spider-Man. Go
 
 The Doomsday device is our friend... Elektro, the ultimate weapon. This is an interesting choice, I never saw Elektro as this major threat that warrants a full storyline that culminates on him being the big bad of the arc. While I have this reservation, the execution is pratically flawless, with Elektro being portrayed as an all-powerful entity causing chaos throughout the world and everyone having difficulties stopping him. We see Captain America and Red Skull get absorved in the vortex again and Spider-Man saving the day for everyone, almost putting the world in the status quo of the 1940s. This arc is a victory for the show, being able to keep up good writing through five continuous episodes that felt like a spy novel combined with superhero shenanigans. If you told me that the show would have made a five-part episode with a bunch of new superheroes work, I would bet against, but long-term storytelling is one of the strongest parts of **Spider-Man: TAS** and this was shown once again here.
 
+**The Return of Hydro-Man: Part One**
+*************************************
+
+.. image:: images/16-07-S05E07-hydro.png
+  :alt: Shot from the seventh episode of the fifth season of the Spider-Man 1994 television series.
+  :align: center
+
+.. class:: center
+
+*"Is it possible the lady is trying to tell you something? By evaporating you, boiling you and fleeing in terror from you?" - Spider-Man*
+
+**Story by**: John Semper.
+
+**Teleplay by**: Eileen Fuentes and James Krieg.
+
+So... that ending, huh? Hydro-Man returns and we have what appeared to be a paint by numbers episode very much similar to the Season 2 one. Morrie shows up, is obsessed with Mary Jane, kidnaps her and Spider-Man comes in to save the day. But, actually, this time around the episode finishes with Mary Jane unleashing a water blast that sends Hydro-Man away. Now the cliffhanger is: how is she able to do that? This adds a lot and let's hope the show can deliver a good answer to that question.
+
 .. _`Heartbeat City`: https://en.wikipedia.org/wiki/Heartbeat_City
 .. _here: https://www.youtube.com/watch?v=E0Kv6vxZwL8
