@@ -178,7 +178,7 @@ The main aspect of the Secret War is showing how Spider-Man is a leader of peopl
 
 .. class:: center
 
-*"Good has triumph over evil." - The Beyonder*
+*"Good has triumphed over evil." - The Beyonder*
 
 **Written by**: John Semper, Mark Hoffmeier, and Ernie Altbacker.
 
@@ -193,7 +193,7 @@ Well, the Secret War is over. Good has won. The final episode of the storyline e
 
 .. class:: center
 
-*"This is starting to sound like a bad comic book plot" - Spider-Man*
+*"This is starting to sound like a bad comic book plot." - Spider-Man*
 
 **Story by**: John Semper.
 
